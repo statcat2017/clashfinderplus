@@ -1,6 +1,6 @@
 # ClashFinderPlus
 
-A project to help find and manage Clash of Clans activities.
+A placeholder repo for ClashFinderPlus.
 
 ## Getting Started
 
