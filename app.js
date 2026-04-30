@@ -8,6 +8,7 @@ const state = {
   suggested: new Set(),
   antiSuggested: new Set(),
   genreByName: new Map(),
+  similarityByName: new Map(),
 };
 
 const els = {
@@ -33,6 +34,7 @@ async function init() {
   const response = await fetch("schedule.json");
   state.data = await response.json();
   await loadGenreData();
+  await loadSimilarityData();
   state.dayId = state.data.days[0]?.id;
 
   els.title.textContent = state.data.title;
@@ -121,7 +123,7 @@ function renderTimeline(acts) {
     return;
   }
 
-  const rowHeight = 92;
+  const rowHeight = 118;
   const stageWidth = Number.parseFloat(
     getComputedStyle(document.documentElement).getPropertyValue("--stage-width")
   );
@@ -195,10 +197,14 @@ function renderDaySegment(day, acts, stages, rowHeight, stageWidth, gridWidth) {
         card.className = `act-card ${getActStatusClass(act)}`.trim();
         card.style.top = `${((act.startMs - minStart) / span) * 100}%`;
         card.style.height = `${((act.endMs - act.startMs) / span) * 100}%`;
-        card.title = `${act.name} · ${act.stageName} · ${act.time}`;
-        card.innerHTML = `<span class="act-name"></span><span class="act-time"></span>`;
+        const neighbours = topSimilarNeighbours(act);
+        card.title = `${act.name} · ${act.stageName} · ${act.time}${
+          neighbours.length ? ` · ${neighbours.join(", ")}` : ""
+        }`;
+        card.innerHTML = `<span class="act-name"></span><span class="act-time"></span><span class="act-similar"></span>`;
         card.querySelector(".act-name").textContent = act.name;
         card.querySelector(".act-time").textContent = act.time;
+        card.querySelector(".act-similar").textContent = neighbours.join(", ");
         card.addEventListener("click", () => toggleStar(act.id));
         column.append(card);
       });
@@ -225,11 +231,9 @@ function renderActList() {
     const details = document.createElement("div");
     const name = document.createElement("strong");
     const meta = document.createElement("span");
-    const badge = document.createElement("em");
     name.textContent = act.name;
     meta.textContent = actMeta(act);
-    badge.textContent = state.starred.has(act.id) ? "Starred" : "Suggested";
-    details.append(name, meta, badge);
+    details.append(name, meta);
 
     const button = document.createElement("button");
     button.className = "star-button";
@@ -361,7 +365,7 @@ function getScoredCandidates(starredActs) {
     .filter((act) => !starredActs.some((starred) => actsOverlap(act, starred)))
     .map((act) => ({
       ...act,
-      recommendationScore: genreMatchScore(act, genreScores),
+      recommendationScore: similarityScore(act, starredActs) || genreMatchScore(act, genreScores),
       distanceFromStars: distanceFromStars(act, starredActs),
     }))
 }
@@ -386,12 +390,59 @@ async function loadGenreData() {
   }
 }
 
+async function loadSimilarityData() {
+  try {
+    const response = await fetch("similarity_graph.json", { cache: "no-store" });
+    if (!response.ok) return;
+    const data = await response.json();
+    const similarity = new Map();
+    for (const edge of data.edges || []) {
+      addSimilarityEdge(similarity, edge.source, edge.target, edge.score);
+      addSimilarityEdge(similarity, edge.target, edge.source, edge.score);
+    }
+    state.similarityByName = similarity;
+  } catch {
+    state.similarityByName = new Map();
+  }
+}
+
+function addSimilarityEdge(similarity, source, target, score) {
+  const sourceKey = source.toLowerCase();
+  const targetKey = target.toLowerCase();
+  if (!similarity.has(sourceKey)) {
+    similarity.set(sourceKey, new Map());
+  }
+  similarity.get(sourceKey).set(targetKey, score);
+}
+
 function getActGenres(act) {
   return state.genreByName.get(act.name.toLowerCase()) || [];
 }
 
 function genreMatchScore(act, genreScores) {
   return getActGenres(act).reduce((score, genre) => score + (genreScores.get(genre) || 0), 0);
+}
+
+function similarityScore(act, starredActs) {
+  const actKey = act.name.toLowerCase();
+  return starredActs.reduce((score, starred) => {
+    const neighbours = state.similarityByName.get(starred.name.toLowerCase());
+    return score + (neighbours?.get(actKey) || 0);
+  }, 0);
+}
+
+function topSimilarNeighbours(act) {
+  const neighbours = state.similarityByName.get(act.name.toLowerCase());
+  if (!neighbours) return [];
+  return [...neighbours.entries()]
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .slice(0, 3)
+    .map(([name]) => titleCaseKnownArtist(name));
+}
+
+function titleCaseKnownArtist(name) {
+  const act = state.data.acts.find((candidate) => candidate.name.toLowerCase() === name);
+  return act?.name || name;
 }
 
 function actMeta(act) {

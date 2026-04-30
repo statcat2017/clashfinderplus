@@ -1,40 +1,20 @@
 import argparse
 import base64
-import json
 import os
-import re
 import time
 from collections import Counter
 from datetime import datetime, timezone
-from pathlib import Path
 from urllib.parse import quote
 
 import requests
+
+from schedule_utils import artist_key, artists_from_schedule, load_json, normalise_name, save_json
 
 
 SCHEDULE_FILE = "schedule.json"
 OUTPUT_FILE = "artist_genres.json"
 CACHE_FILE = "genre_cache.json"
 APP_NAME = "ClashFinderPlus/0.1 ( https://github.com/local/clashfinderplus )"
-
-
-def normalise_name(name):
-    return re.sub(r"\s+", " ", name).strip()
-
-
-def artist_key(name):
-    return normalise_name(name).casefold()
-
-
-def load_json(path, default):
-    file_path = Path(path)
-    if not file_path.exists():
-        return default
-    return json.loads(file_path.read_text(encoding="utf-8"))
-
-
-def save_json(path, data):
-    Path(path).write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
 def request_json(url, headers=None, params=None, method="get", data=None, timeout=30):
@@ -264,27 +244,6 @@ def unique(values):
             seen.add(cleaned)
             result.append(cleaned)
     return result
-
-
-def artists_from_schedule(schedule):
-    artists = {}
-    for act in schedule.get("acts", []):
-        name = normalise_name(act.get("name", ""))
-        if not name or name.casefold() == "tbc":
-            continue
-
-        key = artist_key(name)
-        current = artists.setdefault(
-            key,
-            {
-                "name": name,
-                "musicBrainzId": None,
-                "actIds": [],
-            },
-        )
-        current["actIds"].append(act.get("id"))
-        current["musicBrainzId"] = current["musicBrainzId"] or act.get("musicBrainzId")
-    return sorted(artists.values(), key=lambda artist: artist["name"].casefold())
 
 
 def main():
