@@ -1,0 +1,1184 @@
+{
+  "musicbrainz:55c6eb6e-8388-497c-acaf-dbff584d0c3a": {
+    "genres": [
+      "alternative rock",
+      "pop punk",
+      "hard rock"
+    ],
+    "tags": [
+      "alternative rock",
+      "pop punk",
+      "hard rock"
+    ],
+    "wikidataId": "Q300307"
+  },
+  "wikidata:Q300307": {
+    "genres": [
+      "alternative rock",
+      "indie rock"
+    ],
+    "wikidataId": "Q300307",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/A_(band)"
+  },
+  "musicbrainz:30be4dae-121e-4219-b366-cec72eae4724": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:30be4dae-121e-4219-b366-cec72eae4724": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:932420a3-11cf-457d-a9ef-ad981ff71ffc": {
+    "genres": [
+      "rock"
+    ],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:932420a3-11cf-457d-a9ef-ad981ff71ffc": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:69421e11-e4c3-4854-951b-ceab4972e38e": {
+    "genres": [
+      "punk rock",
+      "pop punk",
+      "punk",
+      "alternative rock",
+      "emo"
+    ],
+    "tags": [
+      "punk rock",
+      "pop punk",
+      "punk",
+      "alternative rock"
+    ],
+    "wikidataId": "Q1142703"
+  },
+  "wikidata:Q1142703": {
+    "genres": [
+      "punk rock",
+      "emo",
+      "alternative rock",
+      "pop-punk"
+    ],
+    "wikidataId": "Q1142703",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Alkaline_Trio"
+  },
+  "musicbrainz:6f8d4920-d6ab-4c10-b4fa-6513ab0b8982": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": "Q54817728"
+  },
+  "wikidata:Q54817728": {
+    "genres": [],
+    "wikidataId": "Q54817728",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Alpha_Male_Tea_Party"
+  },
+  "musicbrainz:5b9ad184-22af-49ad-bbef-0ab534ecac9c": {
+    "genres": [
+      "alternative hip hop",
+      "alternative metal",
+      "alternative rock",
+      "electronic rock",
+      "nu metal",
+      "punk rap",
+      "punk rock",
+      "rock"
+    ],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:5b9ad184-22af-49ad-bbef-0ab534ecac9c": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:eba4c290-2ce6-42c9-affd-5b1ffab84a8f": {
+    "genres": [
+      "indie rock",
+      "alternative rock",
+      "emo",
+      "experimental rock",
+      "math rock",
+      "post-hardcore",
+      "progressive rock"
+    ],
+    "tags": [
+      "indie rock"
+    ],
+    "wikidataId": "Q4149559"
+  },
+  "wikidata:Q4149559": {
+    "genres": [
+      "emo",
+      "screamo",
+      "alternative rock",
+      "progressive rock",
+      "indie rock",
+      "post-hardcore",
+      "pop rock",
+      "experimental rock"
+    ],
+    "wikidataId": "Q4149559",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Anthony_Green_(musician)"
+  },
+  "musicbrainz:270d9798-9984-49fe-b525-70e39e0ffc76": {
+    "genres": [
+      "alternative rock",
+      "alternative metal",
+      "post-hardcore",
+      "progressive",
+      "progressive rock",
+      "rock"
+    ],
+    "tags": [
+      "alternative rock"
+    ],
+    "wikidataId": "Q4785224"
+  },
+  "wikidata:Q4785224": {
+    "genres": [
+      "alternative rock"
+    ],
+    "wikidataId": "Q4785224",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Arcane_Roots"
+  },
+  "musicbrainz:62533682-e61c-47a6-b9d7-1811e987d571": {
+    "genres": [
+      "post-hardcore",
+      "alternative metal",
+      "alternative rock",
+      "metalcore"
+    ],
+    "tags": [
+      "post-hardcore"
+    ],
+    "wikidataId": "Q108304009"
+  },
+  "wikidata:Q108304009": {
+    "genres": [],
+    "wikidataId": "Q108304009",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/As_Everything_Unfolds"
+  },
+  "musicbrainz:4118a088-4cb6-45ec-9178-b0c296eee73c": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:4118a088-4cb6-45ec-9178-b0c296eee73c": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:e3855311-3405-44e7-b942-2e50f64bfbca": {
+    "genres": [
+      "garage rock",
+      "punk",
+      "punk rock"
+    ],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:e3855311-3405-44e7-b942-2e50f64bfbca": {
+    "genres": [],
+    "wikidataId": "Q136378455",
+    "wikipediaUrl": null
+  },
+  "musicbrainz:f6121305-462f-4fbb-911e-717b9babd468": {
+    "genres": [
+      "heavy metal",
+      "hard rock"
+    ],
+    "tags": [
+      "heavy metal"
+    ],
+    "wikidataId": null
+  },
+  "wikidata:f6121305-462f-4fbb-911e-717b9babd468": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:683c565e-e746-48c8-b609-6bce7f06b774": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:683c565e-e746-48c8-b609-6bce7f06b774": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:be2a68b1-382c-4d98-aa47-4008b0f6c35d": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:be2a68b1-382c-4d98-aa47-4008b0f6c35d": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:0b72ed9e-578c-4748-bb08-1d8c8dd117b9": {
+    "genres": [
+      "nu metal"
+    ],
+    "tags": [
+      "nu metal"
+    ],
+    "wikidataId": null
+  },
+  "wikidata:0b72ed9e-578c-4748-bb08-1d8c8dd117b9": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:77127115-2daf-4ca8-81c2-c3acb4ce0c31": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:77127115-2daf-4ca8-81c2-c3acb4ce0c31": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:1e0ea21a-d453-4a53-9dc4-55b74a00c3f2": {
+    "genres": [
+      "punk"
+    ],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:1e0ea21a-d453-4a53-9dc4-55b74a00c3f2": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:00b952be-6c97-4880-84f9-06de584b491b": {
+    "genres": [
+      "hardcore punk",
+      "southern rock"
+    ],
+    "tags": [
+      "hardcore punk"
+    ],
+    "wikidataId": "Q1032890"
+  },
+  "wikidata:Q1032890": {
+    "genres": [
+      "hardcore punk",
+      "sludge metal",
+      "stoner metal",
+      "southern metal"
+    ],
+    "wikidataId": "Q1032890",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Cancer_Bats"
+  },
+  "musicbrainz:242940bb-0600-4bfe-a1c0-efb1ab583fec": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:242940bb-0600-4bfe-a1c0-efb1ab583fec": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:ec44206a-c3cc-419d-9ef9-08971c1297dd": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": "Q111839829"
+  },
+  "wikidata:Q111839829": {
+    "genres": [],
+    "wikidataId": "Q111839829",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Coach_Party"
+  },
+  "musicbrainz:8c09035a-1496-4480-9177-8470ee89d14c": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": "Q117830777"
+  },
+  "wikidata:Q117830777": {
+    "genres": [],
+    "wikidataId": "Q117830777",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Cody_Frost"
+  },
+  "musicbrainz:14f67a67-2d22-4411-b092-858bd471b6de": {
+    "genres": [
+      "punk",
+      "punk rock",
+      "garage punk",
+      "garage rock",
+      "grunge",
+      "noise rock",
+      "pigfuck",
+      "pub rock"
+    ],
+    "tags": [
+      "punk",
+      "punk rock"
+    ],
+    "wikidataId": "Q2998276"
+  },
+  "wikidata:Q2998276": {
+    "genres": [
+      "punk rock"
+    ],
+    "wikidataId": "Q2998276",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Cosmic_Psychos"
+  },
+  "musicbrainz:c38f076f-ad03-4b7e-bf5c-ac82d0dda536": {
+    "genres": [
+      "hip hop",
+      "punk",
+      "riot grrrl"
+    ],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:c38f076f-ad03-4b7e-bf5c-ac82d0dda536": {
+    "genres": [
+      "punk rock",
+      "grunge",
+      "hip-hop",
+      "nu metal",
+      "riot grrrl"
+    ],
+    "wikidataId": "Q122929036",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Delilah_Bon"
+  },
+  "musicbrainz:b7023072-3a8c-4efc-bfd3-c117185f3b66": {
+    "genres": [
+      "alternative rock",
+      "grunge",
+      "rock"
+    ],
+    "tags": [],
+    "wikidataId": "Q5278645"
+  },
+  "wikidata:Q5278645": {
+    "genres": [
+      "alternative rock"
+    ],
+    "wikidataId": "Q5278645",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Dinosaur_Pile-Up"
+  },
+  "musicbrainz:1ca441fa-7cea-4f29-939b-06d8741f74c7": {
+    "genres": [
+      "emo",
+      "midwest emo",
+      "pop punk"
+    ],
+    "tags": [
+      "emo",
+      "midwest emo",
+      "pop punk"
+    ],
+    "wikidataId": "Q18719095"
+  },
+  "wikidata:Q18719095": {
+    "genres": [
+      "emo"
+    ],
+    "wikidataId": "Q18719095",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Free_Throw_(band)"
+  },
+  "musicbrainz:81db4ee1-4152-47d3-9367-9545590ac510": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:81db4ee1-4152-47d3-9367-9545590ac510": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:199d0ab3-22c0-4c00-b99d-257f591dda1f": {
+    "genres": [
+      "alternative rock",
+      "emo",
+      "emocore",
+      "post-hardcore",
+      "screamo"
+    ],
+    "tags": [],
+    "wikidataId": "Q916973"
+  },
+  "wikidata:Q916973": {
+    "genres": [
+      "emo",
+      "post-hardcore",
+      "melodic hardcore"
+    ],
+    "wikidataId": "Q916973",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Funeral_for_a_Friend"
+  },
+  "musicbrainz:fc077754-88b4-4ec9-a745-0b86de94a399": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:fc077754-88b4-4ec9-a745-0b86de94a399": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:429f9fbf-0a0b-4a9e-a88c-94d48aa466ed": {
+    "genres": [
+      "post-hardcore",
+      "alternative metal",
+      "nu metal",
+      "rock",
+      "screamo"
+    ],
+    "tags": [
+      "post-hardcore",
+      "alternative metal",
+      "nu metal"
+    ],
+    "wikidataId": "Q1529784"
+  },
+  "wikidata:Q1529784": {
+    "genres": [
+      "post-hardcore"
+    ],
+    "wikidataId": "Q1529784",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Glassjaw"
+  },
+  "musicbrainz:69f4db4a-2e86-4df2-a310-992d6f69c17e": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:69f4db4a-2e86-4df2-a310-992d6f69c17e": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:75c1dfd7-0ff3-4008-aa3a-0d40e98faddc": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:75c1dfd7-0ff3-4008-aa3a-0d40e98faddc": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:1f2268d8-67e4-4291-b12a-2f2df4467b3f": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:1f2268d8-67e4-4291-b12a-2f2df4467b3f": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:9f7a4907-9c6d-4e84-9a16-5bcaee2f8381": {
+    "genres": [
+      "alternative rock",
+      "emo",
+      "hardcore punk",
+      "pop punk",
+      "punk rock",
+      "rock"
+    ],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:9f7a4907-9c6d-4e84-9a16-5bcaee2f8381": {
+    "genres": [],
+    "wikidataId": "Q65074652",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Heart_Attack_Man"
+  },
+  "musicbrainz:29acd2bb-7e67-4722-97ed-472e365ae860": {
+    "genres": [
+      "punk"
+    ],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:29acd2bb-7e67-4722-97ed-472e365ae860": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:baf9d13e-8472-4faf-94b5-a6bc5a73ef82": {
+    "genres": [
+      "hardcore punk"
+    ],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:baf9d13e-8472-4faf-94b5-a6bc5a73ef82": {
+    "genres": [
+      "hardcore punk"
+    ],
+    "wikidataId": "Q84763107",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Higher_Power_(band)"
+  },
+  "musicbrainz:e0458faa-82b2-4011-b851-6a0ed1f5a0e6": {
+    "genres": [
+      "punk rap"
+    ],
+    "tags": [],
+    "wikidataId": "Q20684179"
+  },
+  "wikidata:Q20684179": {
+    "genres": [],
+    "wikidataId": "Q20684179",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Ho99o9"
+  },
+  "musicbrainz:5af8c97e-e8c3-4794-ae24-eb71ae8dc67c": {
+    "genres": [
+      "alternative rock"
+    ],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:5af8c97e-e8c3-4794-ae24-eb71ae8dc67c": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:239ebba9-2670-45a6-b387-ba6becb2fa77": {
+    "genres": [
+      "alternative metal",
+      "electronic",
+      "post-hardcore",
+      "rapcore"
+    ],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:239ebba9-2670-45a6-b387-ba6becb2fa77": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:1ed91c01-85c1-4a68-b5c9-de8579761cbb": {
+    "genres": [
+      "hip hop",
+      "grime",
+      "indie pop",
+      "jungle",
+      "punk",
+      "punk rap"
+    ],
+    "tags": [
+      "hip hop"
+    ],
+    "wikidataId": "Q135394765"
+  },
+  "wikidata:Q135394765": {
+    "genres": [],
+    "wikidataId": "Q135394765",
+    "wikipediaUrl": null
+  },
+  "musicbrainz:9419548f-7322-41e1-813e-8ff8114a2eab": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:9419548f-7322-41e1-813e-8ff8114a2eab": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:5f09395a-2c62-4e8e-ab50-e16736c2de95": {
+    "genres": [
+      "alternative metal",
+      "metal",
+      "metalcore"
+    ],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:5f09395a-2c62-4e8e-ab50-e16736c2de95": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:5b8e664b-7d01-4e5e-ae14-2abc5c58156c": {
+    "genres": [
+      "neofolk",
+      "post-punk"
+    ],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:5b8e664b-7d01-4e5e-ae14-2abc5c58156c": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:4eeea7eb-7554-48cb-9e50-c26d434ed9ef": {
+    "genres": [
+      "punk",
+      "punk rock",
+      "rock"
+    ],
+    "tags": [
+      "punk",
+      "punk rock"
+    ],
+    "wikidataId": "Q112123144"
+  },
+  "wikidata:Q112123144": {
+    "genres": [
+      "punk rock",
+      "riot grrrl"
+    ],
+    "wikidataId": "Q112123144",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Lambrini_Girls"
+  },
+  "musicbrainz:0913f9cb-8c41-4935-8888-65c21b1a662c": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:0913f9cb-8c41-4935-8888-65c21b1a662c": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:a66864e6-4e74-4c00-b4c2-79fe8eb35217": {
+    "genres": [
+      "math rock",
+      "screamo"
+    ],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:a66864e6-4e74-4c00-b4c2-79fe8eb35217": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:94281561-7c6a-48ac-9c71-8f09ce8255ce": {
+    "genres": [
+      "alternative rock",
+      "post-hardcore"
+    ],
+    "tags": [],
+    "wikidataId": "Q15044899"
+  },
+  "wikidata:Q15044899": {
+    "genres": [
+      "alternative rock"
+    ],
+    "wikidataId": "Q15044899",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Mallory_Knox"
+  },
+  "musicbrainz:ccecffbf-6631-46a3-8e32-ece2669ace37": {
+    "genres": [
+      "mariachi"
+    ],
+    "tags": [],
+    "wikidataId": "Q535853"
+  },
+  "wikidata:Q535853": {
+    "genres": [
+      "hardcore punk"
+    ],
+    "wikidataId": "Q535853",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Bronx_(band)"
+  },
+  "musicbrainz:a8397de0-fe98-42db-bf19-c26b99ead138": {
+    "genres": [
+      "math rock",
+      "mathcore",
+      "post-hardcore"
+    ],
+    "tags": [],
+    "wikidataId": "Q16599970"
+  },
+  "wikidata:Q16599970": {
+    "genres": [
+      "alternative rock"
+    ],
+    "wikidataId": "Q16599970",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Marmozets"
+  },
+  "musicbrainz:a521f1a8-a949-4dcf-ab33-94596cb02787": {
+    "genres": [
+      "hardcore punk",
+      "punk"
+    ],
+    "tags": [
+      "hardcore punk",
+      "post hardcore"
+    ],
+    "wikidataId": null
+  },
+  "wikidata:a521f1a8-a949-4dcf-ab33-94596cb02787": {
+    "genres": [
+      "hardcore punk"
+    ],
+    "wikidataId": "Q117018114",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Militarie_Gun"
+  },
+  "musicbrainz:08d71fb5-af78-4e5b-b54b-0b5c7587d152": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:08d71fb5-af78-4e5b-b54b-0b5c7587d152": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:cdb1edd0-fed1-4e59-9534-00bd41dc7a35": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:cdb1edd0-fed1-4e59-9534-00bd41dc7a35": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:c41dd59f-d805-41df-9e0e-83ec0f9f468e": {
+    "genres": [
+      "pop punk",
+      "punk",
+      "alternative rock",
+      "punk rock",
+      "rock"
+    ],
+    "tags": [
+      "pop punk",
+      "punk"
+    ],
+    "wikidataId": "Q16955493"
+  },
+  "wikidata:Q16955493": {
+    "genres": [
+      "punk rock",
+      "pop-punk"
+    ],
+    "wikidataId": "Q16955493",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Neck_Deep"
+  },
+  "musicbrainz:585f0960-a193-4894-964f-478947d7eedd": {
+    "genres": [
+      "emo",
+      "indie rock",
+      "math rock",
+      "pop",
+      "pop punk"
+    ],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:585f0960-a193-4894-964f-478947d7eedd": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:0b85222e-c1ba-4c4b-a0ca-07ae56efd597": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:0b85222e-c1ba-4c4b-a0ca-07ae56efd597": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:2cd694ac-1eb2-4839-801f-7e97be66d856": {
+    "genres": [
+      "post-hardcore",
+      "punk rock"
+    ],
+    "tags": [],
+    "wikidataId": "Q55629700"
+  },
+  "wikidata:Q55629700": {
+    "genres": [],
+    "wikidataId": "Q55629700",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Petrol_Girls"
+  },
+  "musicbrainz:49d47930-aaba-4caf-8a80-31be20d0e8f6": {
+    "genres": [
+      "pop punk",
+      "post-punk",
+      "punk",
+      "rock"
+    ],
+    "tags": [],
+    "wikidataId": "Q115805771"
+  },
+  "wikidata:Q115805771": {
+    "genres": [],
+    "wikidataId": "Q115805771",
+    "wikipediaUrl": null
+  },
+  "musicbrainz:fee23a56-354f-4387-a2f4-d4495360c08f": {
+    "genres": [
+      "indie rock",
+      "emo"
+    ],
+    "tags": [
+      "indie rock"
+    ],
+    "wikidataId": null
+  },
+  "wikidata:fee23a56-354f-4387-a2f4-d4495360c08f": {
+    "genres": [
+      "emo",
+      "alternative rock",
+      "power pop",
+      "math rock"
+    ],
+    "wikidataId": "Q118140610",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pool_Kids"
+  },
+  "musicbrainz:3165f5e0-44ff-446a-81d7-c09ec69661ae": {
+    "genres": [
+      "punk rock",
+      "punk",
+      "emo",
+      "hardcore punk",
+      "indie rock",
+      "pop punk"
+    ],
+    "tags": [
+      "punk rock",
+      "canada",
+      "punk",
+      "band"
+    ],
+    "wikidataId": "Q16967929"
+  },
+  "wikidata:Q16967929": {
+    "genres": [
+      "punk rock",
+      "hardcore punk",
+      "indie rock",
+      "pop-punk"
+    ],
+    "wikidataId": "Q16967929",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/PUP_(band)"
+  },
+  "musicbrainz:26d09032-2c33-4656-92bc-1e855f3e7d89": {
+    "genres": [
+      "blues",
+      "hard rock",
+      "metal",
+      "psychedelic",
+      "rock",
+      "western"
+    ],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:26d09032-2c33-4656-92bc-1e855f3e7d89": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:829af8e9-c71c-4a55-b9e4-fe1dfec942e1": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:829af8e9-c71c-4a55-b9e4-fe1dfec942e1": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:af4d1294-9e2d-4560-8cf1-9e7c155cadb2": {
+    "genres": [
+      "britpop",
+      "grunge",
+      "indie pop",
+      "indie rock",
+      "rock"
+    ],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:af4d1294-9e2d-4560-8cf1-9e7c155cadb2": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:f0007987-8bc1-4015-9ee4-66e61c12157f": {
+    "genres": [
+      "punk"
+    ],
+    "tags": [
+      "punk"
+    ],
+    "wikidataId": null
+  },
+  "wikidata:f0007987-8bc1-4015-9ee4-66e61c12157f": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:9c6be276-94fb-4e55-a122-279d66b1f1d3": {
+    "genres": [
+      "alternative metal"
+    ],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:9c6be276-94fb-4e55-a122-279d66b1f1d3": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:256e0b36-88cb-453a-9ce4-7b73cb6b882f": {
+    "genres": [
+      "alternative rock",
+      "garage punk",
+      "post-punk"
+    ],
+    "tags": [],
+    "wikidataId": "Q112025599"
+  },
+  "wikidata:Q112025599": {
+    "genres": [
+      "post-punk"
+    ],
+    "wikidataId": "Q112025599",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Sprints_(band)"
+  },
+  "musicbrainz:bc8faff5-6074-4662-a78c-51ba07d7cc58": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:bc8faff5-6074-4662-a78c-51ba07d7cc58": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:86b24e8f-a4d9-4c84-83ee-fde0d14ad9fa": {
+    "genres": [
+      "emo",
+      "alternative rock",
+      "indie rock",
+      "midwest emo",
+      "post-grunge",
+      "post-hardcore",
+      "rock"
+    ],
+    "tags": [
+      "emo",
+      "alternative rock",
+      "indie rock"
+    ],
+    "wikidataId": "Q1361543"
+  },
+  "wikidata:Q1361543": {
+    "genres": [
+      "emo",
+      "grunge",
+      "alternative rock",
+      "indie rock",
+      "post-hardcore"
+    ],
+    "wikidataId": "Q1361543",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Sunny_Day_Real_Estate"
+  },
+  "musicbrainz:16f7e748-59b4-4705-959c-9276be0ebf6a": {
+    "genres": [
+      "alternative rock",
+      "post-hardcore"
+    ],
+    "tags": [
+      "alternative rock"
+    ],
+    "wikidataId": "Q19881990"
+  },
+  "wikidata:Q19881990": {
+    "genres": [
+      "grunge",
+      "alternative rock"
+    ],
+    "wikidataId": "Q19881990",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Superheaven"
+  },
+  "musicbrainz:8d572a47-ddb9-4ba0-b485-1e57dbcbc5ea": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:8d572a47-ddb9-4ba0-b485-1e57dbcbc5ea": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:66ca7462-753c-48d0-9fe7-80d4b0897d18": {
+    "genres": [
+      "hard rock",
+      "hardcore punk",
+      "mariachi",
+      "metalcore",
+      "post-hardcore",
+      "punk rock"
+    ],
+    "tags": [],
+    "wikidataId": "Q535853"
+  },
+  "musicbrainz:039ab342-efb8-472e-817c-5800d3a70493": {
+    "genres": [
+      "metal",
+      "punk",
+      "rock"
+    ],
+    "tags": [
+      "alternative",
+      "indie"
+    ],
+    "wikidataId": "Q29467613"
+  },
+  "wikidata:Q29467613": {
+    "genres": [],
+    "wikidataId": "Q29467613",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Dirty_Nil"
+  },
+  "musicbrainz:060a04e3-dd87-4611-b1bc-12e4bf34d5ee": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:060a04e3-dd87-4611-b1bc-12e4bf34d5ee": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:ae1b32a2-107d-4093-a00b-ac6acf838632": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:ae1b32a2-107d-4093-a00b-ac6acf838632": {
+    "genres": [],
+    "wikidataId": "Q136488362",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Skinner_Brothers"
+  },
+  "musicbrainz:7a279145-e778-4099-8f73-ea917a1956c9": {
+    "genres": [
+      "reggae",
+      "ska",
+      "dub",
+      "punk rock"
+    ],
+    "tags": [
+      "reggae",
+      "ska"
+    ],
+    "wikidataId": "Q4051291"
+  },
+  "wikidata:Q4051291": {
+    "genres": [
+      "punk rock"
+    ],
+    "wikidataId": "Q4051291",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Skints"
+  },
+  "musicbrainz:47035a1e-7137-4c92-9a74-88647d021efd": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": "Q7772834"
+  },
+  "wikidata:Q7772834": {
+    "genres": [
+      "rock music"
+    ],
+    "wikidataId": "Q7772834",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Virginmarys"
+  },
+  "musicbrainz:f0468734-9ae8-4701-bb18-42c4a162115a": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": "Q1733453"
+  },
+  "wikidata:Q1733453": {
+    "genres": [
+      "alternative rock"
+    ],
+    "wikidataId": "Q1733453",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Xcerts"
+  },
+  "musicbrainz:0acae232-d31a-4211-b6d0-6af1b6350274": {
+    "genres": [
+      "post-hardcore",
+      "emo",
+      "alternative rock"
+    ],
+    "tags": [
+      "post-hardcore",
+      "emo",
+      "alternative rock",
+      "american"
+    ],
+    "wikidataId": "Q1433169"
+  },
+  "wikidata:Q1433169": {
+    "genres": [
+      "hardcore punk"
+    ],
+    "wikidataId": "Q1433169",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Thursday_(band)"
+  },
+  "musicbrainz:71f9b6b9-1b38-46d5-8a68-77b296af6674": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:71f9b6b9-1b38-46d5-8a68-77b296af6674": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:d1b37fb5-ad99-4b8d-9d7b-b01b307602b6": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:d1b37fb5-ad99-4b8d-9d7b-b01b307602b6": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  },
+  "musicbrainz:5b1ed841-450e-49b6-8bf3-b50bd54bc897": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": "Q7932642"
+  },
+  "wikidata:Q7932642": {
+    "genres": [
+      "punk rock",
+      "hardcore punk",
+      "emo",
+      "indie rock",
+      "post-hardcore",
+      "pop-punk",
+      "melodic hardcore"
+    ],
+    "wikidataId": "Q7932642",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Vinnie_Caruana"
+  },
+  "musicbrainz:409b911e-1496-4238-a63a-25bcefe0f872": {
+    "genres": [],
+    "tags": [],
+    "wikidataId": null
+  },
+  "wikidata:409b911e-1496-4238-a63a-25bcefe0f872": {
+    "genres": [],
+    "wikidataId": null,
+    "wikipediaUrl": null
+  }
+}

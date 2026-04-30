@@ -1,0 +1,2502 @@
+{
+  "generatedAt": "2026-04-30T16:29:00.100930+00:00",
+  "schedule": "schedule.json",
+  "artists": [
+    {
+      "name": "2 Promoters, 1 Pod",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "2promo-1"
+      ]
+    },
+    {
+      "name": "A",
+      "musicBrainzId": "55c6eb6e-8388-497c-acaf-dbff584d0c3a",
+      "wikidataId": "Q300307",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/A_(band)",
+      "spotifyId": null,
+      "genres": [
+        "alternative rock",
+        "pop punk",
+        "hard rock",
+        "indie rock"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "a-1"
+      ]
+    },
+    {
+      "name": "A Forest",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "afores-1"
+      ]
+    },
+    {
+      "name": "Adore",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "adore-1"
+      ]
+    },
+    {
+      "name": "Aerial Salad",
+      "musicBrainzId": "30be4dae-121e-4219-b366-cec72eae4724",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "aerial-1"
+      ]
+    },
+    {
+      "name": "Ain't",
+      "musicBrainzId": "932420a3-11cf-457d-a9ef-ad981ff71ffc",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [
+        "rock"
+      ],
+      "sources": [
+        "musicbrainz"
+      ],
+      "actIds": [
+        "aint1-1"
+      ]
+    },
+    {
+      "name": "ALISHA",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "alisha-1"
+      ]
+    },
+    {
+      "name": "Alkaline Trio",
+      "musicBrainzId": "69421e11-e4c3-4854-951b-ceab4972e38e",
+      "wikidataId": "Q1142703",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Alkaline_Trio",
+      "spotifyId": null,
+      "genres": [
+        "punk rock",
+        "alternative rock",
+        "emo",
+        "pop punk",
+        "punk",
+        "pop-punk"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "alkali-1"
+      ]
+    },
+    {
+      "name": "Alpha Male Tea Party",
+      "musicBrainzId": "6f8d4920-d6ab-4c10-b4fa-6513ab0b8982",
+      "wikidataId": "Q54817728",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Alpha_Male_Tea_Party",
+      "spotifyId": null,
+      "genres": [],
+      "sources": [
+        "wikipedia"
+      ],
+      "actIds": [
+        "alpham-1"
+      ]
+    },
+    {
+      "name": "ALT BLK ERA",
+      "musicBrainzId": "5b9ad184-22af-49ad-bbef-0ab534ecac9c",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [
+        "alternative hip hop",
+        "alternative metal",
+        "alternative rock",
+        "electronic rock",
+        "nu metal",
+        "punk rap",
+        "punk rock",
+        "rock"
+      ],
+      "sources": [
+        "musicbrainz"
+      ],
+      "actIds": [
+        "altblk1-1"
+      ]
+    },
+    {
+      "name": "Anthony Green",
+      "musicBrainzId": "eba4c290-2ce6-42c9-affd-5b1ffab84a8f",
+      "wikidataId": "Q4149559",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Anthony_Green_(musician)",
+      "spotifyId": null,
+      "genres": [
+        "indie rock",
+        "alternative rock",
+        "emo",
+        "experimental rock",
+        "post-hardcore",
+        "progressive rock",
+        "screamo",
+        "pop rock"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "anthon-1"
+      ]
+    },
+    {
+      "name": "Arcane Roots",
+      "musicBrainzId": "270d9798-9984-49fe-b525-70e39e0ffc76",
+      "wikidataId": "Q4785224",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Arcane_Roots",
+      "spotifyId": null,
+      "genres": [
+        "alternative rock",
+        "alternative metal",
+        "post-hardcore",
+        "progressive",
+        "progressive rock",
+        "rock"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "arcane-1"
+      ]
+    },
+    {
+      "name": "Arcane Roots (acoustic)",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "arcane1-1"
+      ]
+    },
+    {
+      "name": "As Everything Unfolds",
+      "musicBrainzId": "62533682-e61c-47a6-b9d7-1811e987d571",
+      "wikidataId": "Q108304009",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/As_Everything_Unfolds",
+      "spotifyId": null,
+      "genres": [
+        "post-hardcore",
+        "alternative metal",
+        "alternative rock",
+        "metalcore"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikipedia"
+      ],
+      "actIds": [
+        "asever-1"
+      ]
+    },
+    {
+      "name": "Ashaine White",
+      "musicBrainzId": "4118a088-4cb6-45ec-9178-b0c296eee73c",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "ashain-1"
+      ]
+    },
+    {
+      "name": "Bad Nerves",
+      "musicBrainzId": "e3855311-3405-44e7-b942-2e50f64bfbca",
+      "wikidataId": "Q136378455",
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [
+        "garage rock",
+        "punk",
+        "punk rock"
+      ],
+      "sources": [
+        "musicbrainz"
+      ],
+      "actIds": [
+        "badner-1"
+      ]
+    },
+    {
+      "name": "Banks Arcade",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "banksa-1"
+      ]
+    },
+    {
+      "name": "Bat Sabbath",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "batsab-1"
+      ]
+    },
+    {
+      "name": "Battlesnake",
+      "musicBrainzId": "f6121305-462f-4fbb-911e-717b9babd468",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [
+        "heavy metal",
+        "hard rock"
+      ],
+      "sources": [
+        "musicbrainz"
+      ],
+      "actIds": [
+        "battle-1"
+      ]
+    },
+    {
+      "name": "Battlesnake (Silent Disco Live)",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "battle2-1"
+      ]
+    },
+    {
+      "name": "Beauty School",
+      "musicBrainzId": "683c565e-e746-48c8-b609-6bce7f06b774",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "beauty2-1"
+      ]
+    },
+    {
+      "name": "Beauty Sleep",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "beauty-1"
+      ]
+    },
+    {
+      "name": "Bicurious",
+      "musicBrainzId": "be2a68b1-382c-4d98-aa47-4008b0f6c35d",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "bicuri-1"
+      ]
+    },
+    {
+      "name": "Big Truck",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "bigtru-1"
+      ]
+    },
+    {
+      "name": "Billy Kirkwood",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "billyk-1"
+      ]
+    },
+    {
+      "name": "BLACKGOLD",
+      "musicBrainzId": "0b72ed9e-578c-4748-bb08-1d8c8dd117b9",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [
+        "nu metal"
+      ],
+      "sources": [
+        "musicbrainz"
+      ],
+      "actIds": [
+        "blackg-1"
+      ]
+    },
+    {
+      "name": "Bleech 9:3",
+      "musicBrainzId": "77127115-2daf-4ca8-81c2-c3acb4ce0c31",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "bleech1-1"
+      ]
+    },
+    {
+      "name": "Bodyweb",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "bodywe-1"
+      ]
+    },
+    {
+      "name": "Bratakus",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "bratak-1"
+      ]
+    },
+    {
+      "name": "Bruise Control",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "bruise-1"
+      ]
+    },
+    {
+      "name": "Buds.",
+      "musicBrainzId": "1e0ea21a-d453-4a53-9dc4-55b74a00c3f2",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [
+        "punk"
+      ],
+      "sources": [
+        "musicbrainz"
+      ],
+      "actIds": [
+        "buds1-1"
+      ]
+    },
+    {
+      "name": "Call Me Amour",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "callme-1"
+      ]
+    },
+    {
+      "name": "Cancer Bats",
+      "musicBrainzId": "00b952be-6c97-4880-84f9-06de584b491b",
+      "wikidataId": "Q1032890",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Cancer_Bats",
+      "spotifyId": null,
+      "genres": [
+        "hardcore punk",
+        "sludge metal",
+        "stoner metal",
+        "southern metal",
+        "southern rock"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "cancer-1"
+      ]
+    },
+    {
+      "name": "Caroles Daughter",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "carole-1"
+      ]
+    },
+    {
+      "name": "Carsick",
+      "musicBrainzId": "242940bb-0600-4bfe-a1c0-efb1ab583fec",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "carsic-1"
+      ]
+    },
+    {
+      "name": "Chloe Reynolds",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "chloer-1"
+      ]
+    },
+    {
+      "name": "Club Brat",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "clubbr-1"
+      ]
+    },
+    {
+      "name": "Coach Party",
+      "musicBrainzId": "ec44206a-c3cc-419d-9ef9-08971c1297dd",
+      "wikidataId": "Q111839829",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Coach_Party",
+      "spotifyId": null,
+      "genres": [],
+      "sources": [
+        "wikipedia"
+      ],
+      "actIds": [
+        "coachp-1"
+      ]
+    },
+    {
+      "name": "Cody Frost",
+      "musicBrainzId": "8c09035a-1496-4480-9177-8470ee89d14c",
+      "wikidataId": "Q117830777",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Cody_Frost",
+      "spotifyId": null,
+      "genres": [],
+      "sources": [
+        "wikipedia"
+      ],
+      "actIds": [
+        "codyfr-1"
+      ]
+    },
+    {
+      "name": "Cosmic Psychos",
+      "musicBrainzId": "14f67a67-2d22-4411-b092-858bd471b6de",
+      "wikidataId": "Q2998276",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Cosmic_Psychos",
+      "spotifyId": null,
+      "genres": [
+        "punk rock",
+        "punk",
+        "garage punk",
+        "garage rock",
+        "grunge",
+        "noise rock",
+        "pigfuck",
+        "pub rock"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "cosmic-1"
+      ]
+    },
+    {
+      "name": "Cowboy Hunters",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "cowboy-1"
+      ]
+    },
+    {
+      "name": "Daisy Earl",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "daisye-1"
+      ]
+    },
+    {
+      "name": "Dave Longley",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "davelo-1"
+      ]
+    },
+    {
+      "name": "Dead Pioneers",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "deadpi-1"
+      ]
+    },
+    {
+      "name": "DeadWax",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "deadwa-1"
+      ]
+    },
+    {
+      "name": "Delilah Bon",
+      "musicBrainzId": "c38f076f-ad03-4b7e-bf5c-ac82d0dda536",
+      "wikidataId": "Q122929036",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Delilah_Bon",
+      "spotifyId": null,
+      "genres": [
+        "riot grrrl",
+        "punk rock",
+        "grunge",
+        "hip-hop",
+        "nu metal",
+        "hip hop",
+        "punk"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "delila-1"
+      ]
+    },
+    {
+      "name": "Dinosaur Pile Up",
+      "musicBrainzId": "b7023072-3a8c-4efc-bfd3-c117185f3b66",
+      "wikidataId": "Q5278645",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Dinosaur_Pile-Up",
+      "spotifyId": null,
+      "genres": [
+        "alternative rock",
+        "grunge",
+        "rock"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "dinosa-1"
+      ]
+    },
+    {
+      "name": "Doss",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "doss-1"
+      ]
+    },
+    {
+      "name": "East Exchange",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "eastex-1"
+      ]
+    },
+    {
+      "name": "ElliS-D",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "ellisd-1"
+      ]
+    },
+    {
+      "name": "Erika Ehler",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "erikae-1"
+      ]
+    },
+    {
+      "name": "Footballhead",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "footba-1"
+      ]
+    },
+    {
+      "name": "Free Throw",
+      "musicBrainzId": "1ca441fa-7cea-4f29-939b-06d8741f74c7",
+      "wikidataId": "Q18719095",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Free_Throw_(band)",
+      "spotifyId": null,
+      "genres": [
+        "emo",
+        "midwest emo",
+        "pop punk"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "freeth-1"
+      ]
+    },
+    {
+      "name": "Frozemode",
+      "musicBrainzId": "81db4ee1-4152-47d3-9367-9545590ac510",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "frozem-1"
+      ]
+    },
+    {
+      "name": "Frozemode (Silent Disco Live)",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "frozem1-1"
+      ]
+    },
+    {
+      "name": "Funeral For A Friend",
+      "musicBrainzId": "199d0ab3-22c0-4c00-b99d-257f591dda1f",
+      "wikidataId": "Q916973",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Funeral_for_a_Friend",
+      "spotifyId": null,
+      "genres": [
+        "emo",
+        "post-hardcore",
+        "melodic hardcore",
+        "alternative rock",
+        "emocore",
+        "screamo"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "funera-1"
+      ]
+    },
+    {
+      "name": "Gallus",
+      "musicBrainzId": "fc077754-88b4-4ec9-a745-0b86de94a399",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "gallus-1"
+      ]
+    },
+    {
+      "name": "Glass Bridges",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "glassb-1"
+      ]
+    },
+    {
+      "name": "Glassjaw",
+      "musicBrainzId": "429f9fbf-0a0b-4a9e-a88c-94d48aa466ed",
+      "wikidataId": "Q1529784",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Glassjaw",
+      "spotifyId": null,
+      "genres": [
+        "post-hardcore",
+        "alternative metal",
+        "nu metal",
+        "rock",
+        "screamo"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "glassj-1"
+      ]
+    },
+    {
+      "name": "God Complex",
+      "musicBrainzId": "69f4db4a-2e86-4df2-a310-992d6f69c17e",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "godcom-1"
+      ]
+    },
+    {
+      "name": "Goo",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "goo-1"
+      ]
+    },
+    {
+      "name": "Grandmas House",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "grandm-1"
+      ]
+    },
+    {
+      "name": "Greywind",
+      "musicBrainzId": "75c1dfd7-0ff3-4008-aa3a-0d40e98faddc",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "greywi-1"
+      ]
+    },
+    {
+      "name": "Guillotine",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "guillo-1"
+      ]
+    },
+    {
+      "name": "Haggard Cat (Silent Disco Live)",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "haggar1-1"
+      ]
+    },
+    {
+      "name": "Hammok",
+      "musicBrainzId": "1f2268d8-67e4-4291-b12a-2f2df4467b3f",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "hammok-1"
+      ]
+    },
+    {
+      "name": "Hannah Byczkowski",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "hannah-1"
+      ]
+    },
+    {
+      "name": "Happydaze",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "happyd-1"
+      ]
+    },
+    {
+      "name": "Have Mercy",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "haveme-1"
+      ]
+    },
+    {
+      "name": "Hayley Ellis",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "hayley-1"
+      ]
+    },
+    {
+      "name": "Heart Attack Man",
+      "musicBrainzId": "9f7a4907-9c6d-4e84-9a16-5bcaee2f8381",
+      "wikidataId": "Q65074652",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Heart_Attack_Man",
+      "spotifyId": null,
+      "genres": [
+        "alternative rock",
+        "emo",
+        "hardcore punk",
+        "pop punk",
+        "punk rock",
+        "rock"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikipedia"
+      ],
+      "actIds": [
+        "hearta-1"
+      ]
+    },
+    {
+      "name": "High Regard",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "highre1-1"
+      ]
+    },
+    {
+      "name": "High Vis",
+      "musicBrainzId": "29acd2bb-7e67-4722-97ed-472e365ae860",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [
+        "punk"
+      ],
+      "sources": [
+        "musicbrainz"
+      ],
+      "actIds": [
+        "highvi-1"
+      ]
+    },
+    {
+      "name": "Highdrive",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "highdr-1"
+      ]
+    },
+    {
+      "name": "Higher Power",
+      "musicBrainzId": "baf9d13e-8472-4faf-94b5-a6bc5a73ef82",
+      "wikidataId": "Q84763107",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Higher_Power_(band)",
+      "spotifyId": null,
+      "genres": [
+        "hardcore punk"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "higher-1"
+      ]
+    },
+    {
+      "name": "HO99O9",
+      "musicBrainzId": "e0458faa-82b2-4011-b851-6a0ed1f5a0e6",
+      "wikidataId": "Q20684179",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Ho99o9",
+      "spotifyId": null,
+      "genres": [
+        "punk rap"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikipedia"
+      ],
+      "actIds": [
+        "ho99o9-1"
+      ]
+    },
+    {
+      "name": "Hotgirl",
+      "musicBrainzId": "5af8c97e-e8c3-4794-ae24-eb71ae8dc67c",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [
+        "alternative rock"
+      ],
+      "sources": [
+        "musicbrainz"
+      ],
+      "actIds": [
+        "hotgir-1"
+      ]
+    },
+    {
+      "name": "House of Protection",
+      "musicBrainzId": "239ebba9-2670-45a6-b387-ba6becb2fa77",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [
+        "alternative metal",
+        "electronic",
+        "post-hardcore",
+        "rapcore"
+      ],
+      "sources": [
+        "musicbrainz"
+      ],
+      "actIds": [
+        "houseo-1"
+      ]
+    },
+    {
+      "name": "Hydro The Hero",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "hydroh-1"
+      ]
+    },
+    {
+      "name": "Hyphen",
+      "musicBrainzId": "1ed91c01-85c1-4a68-b5c9-de8579761cbb",
+      "wikidataId": "Q135394765",
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [
+        "hip hop",
+        "grime",
+        "indie pop",
+        "jungle",
+        "punk",
+        "punk rap"
+      ],
+      "sources": [
+        "musicbrainz"
+      ],
+      "actIds": [
+        "hyphen-1"
+      ]
+    },
+    {
+      "name": "I Am The Avalanche",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "iamava-1"
+      ]
+    },
+    {
+      "name": "IOTA",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "iota-1"
+      ]
+    },
+    {
+      "name": "J'cuuzi",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "jcuuzi1-1"
+      ]
+    },
+    {
+      "name": "Jamali Maddix",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "jamali-1"
+      ]
+    },
+    {
+      "name": "Jayler",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "jayler-1"
+      ]
+    },
+    {
+      "name": "Joe Jacobs",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "joejac-1"
+      ]
+    },
+    {
+      "name": "Joe Riley",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "joeril-1"
+      ]
+    },
+    {
+      "name": "Karen Dio",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "karend-1"
+      ]
+    },
+    {
+      "name": "Kate Hammer",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "kateha-1"
+      ]
+    },
+    {
+      "name": "Kent Osbourne",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "kentos-1"
+      ]
+    },
+    {
+      "name": "Kids Yoga",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "kidsyo-1",
+        "kidsyo-2",
+        "kidsyo-3"
+      ]
+    },
+    {
+      "name": "Knives",
+      "musicBrainzId": "9419548f-7322-41e1-813e-8ff8114a2eab",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "knives-1"
+      ]
+    },
+    {
+      "name": "Lake Malice",
+      "musicBrainzId": "5f09395a-2c62-4e8e-ab50-e16736c2de95",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [
+        "alternative metal",
+        "metal",
+        "metalcore"
+      ],
+      "sources": [
+        "musicbrainz"
+      ],
+      "actIds": [
+        "lakema-1"
+      ]
+    },
+    {
+      "name": "Lakes",
+      "musicBrainzId": "5b8e664b-7d01-4e5e-ae14-2abc5c58156c",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [
+        "neofolk",
+        "post-punk"
+      ],
+      "sources": [
+        "musicbrainz"
+      ],
+      "actIds": [
+        "lakes-1"
+      ]
+    },
+    {
+      "name": "Lambrini Girls",
+      "musicBrainzId": "4eeea7eb-7554-48cb-9e50-c26d434ed9ef",
+      "wikidataId": "Q112123144",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Lambrini_Girls",
+      "spotifyId": null,
+      "genres": [
+        "punk rock",
+        "punk",
+        "riot grrrl",
+        "rock"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "lambri-1"
+      ]
+    },
+    {
+      "name": "Lastelle",
+      "musicBrainzId": "0913f9cb-8c41-4935-8888-65c21b1a662c",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "lastel-1"
+      ]
+    },
+    {
+      "name": "Lemonsuckr",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "lemons-1"
+      ]
+    },
+    {
+      "name": "Lickshot",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "licksh-1"
+      ]
+    },
+    {
+      "name": "Lonesome",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "loneso-1"
+      ]
+    },
+    {
+      "name": "Long Goodbye",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "longgo-1"
+      ]
+    },
+    {
+      "name": "Louise Atkinson",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "louise-1"
+      ]
+    },
+    {
+      "name": "Love Rarely",
+      "musicBrainzId": "a66864e6-4e74-4c00-b4c2-79fe8eb35217",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [
+        "math rock",
+        "screamo"
+      ],
+      "sources": [
+        "musicbrainz"
+      ],
+      "actIds": [
+        "lovera-1"
+      ]
+    },
+    {
+      "name": "Luxuary Apartments",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "luxuar-1"
+      ]
+    },
+    {
+      "name": "Mallory Knox",
+      "musicBrainzId": "94281561-7c6a-48ac-9c71-8f09ce8255ce",
+      "wikidataId": "Q15044899",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Mallory_Knox",
+      "spotifyId": null,
+      "genres": [
+        "alternative rock",
+        "post-hardcore"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "mallor-1"
+      ]
+    },
+    {
+      "name": "Mariachi El Bronx",
+      "musicBrainzId": "ccecffbf-6631-46a3-8e32-ece2669ace37",
+      "wikidataId": "Q535853",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Bronx_(band)",
+      "spotifyId": null,
+      "genres": [
+        "hardcore punk",
+        "mariachi"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "mariac-1"
+      ]
+    },
+    {
+      "name": "Marmozets",
+      "musicBrainzId": "a8397de0-fe98-42db-bf19-c26b99ead138",
+      "wikidataId": "Q16599970",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Marmozets",
+      "spotifyId": null,
+      "genres": [
+        "alternative rock",
+        "math rock",
+        "mathcore",
+        "post-hardcore"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "marmoz-1"
+      ]
+    },
+    {
+      "name": "Maxine Wade",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "maxine-1"
+      ]
+    },
+    {
+      "name": "Melanie Baker",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "melani-1"
+      ]
+    },
+    {
+      "name": "Militarie Gun",
+      "musicBrainzId": "a521f1a8-a949-4dcf-ab33-94596cb02787",
+      "wikidataId": "Q117018114",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Militarie_Gun",
+      "spotifyId": null,
+      "genres": [
+        "hardcore punk",
+        "punk",
+        "post hardcore"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "milita-1"
+      ]
+    },
+    {
+      "name": "Mouth Culture",
+      "musicBrainzId": "08d71fb5-af78-4e5b-b54b-0b5c7587d152",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "mouthc-1"
+      ]
+    },
+    {
+      "name": "Native James",
+      "musicBrainzId": "cdb1edd0-fed1-4e59-9534-00bd41dc7a35",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "native-1"
+      ]
+    },
+    {
+      "name": "Neck Deep",
+      "musicBrainzId": "c41dd59f-d805-41df-9e0e-83ec0f9f468e",
+      "wikidataId": "Q16955493",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Neck_Deep",
+      "spotifyId": null,
+      "genres": [
+        "punk rock",
+        "pop punk",
+        "punk",
+        "pop-punk",
+        "alternative rock",
+        "rock"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "neckde-1"
+      ]
+    },
+    {
+      "name": "Nervus",
+      "musicBrainzId": "585f0960-a193-4894-964f-478947d7eedd",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [
+        "emo",
+        "indie rock",
+        "math rock",
+        "pop",
+        "pop punk"
+      ],
+      "sources": [
+        "musicbrainz"
+      ],
+      "actIds": [
+        "nervus-1"
+      ]
+    },
+    {
+      "name": "New Act Showcase",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "newact-1",
+        "newact-2",
+        "newact-3"
+      ]
+    },
+    {
+      "name": "Overgrown",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "overgr-1"
+      ]
+    },
+    {
+      "name": "PeaCH",
+      "musicBrainzId": "0b85222e-c1ba-4c4b-a0ca-07ae56efd597",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "peach-1"
+      ]
+    },
+    {
+      "name": "Pete Selwood",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "petese-1"
+      ]
+    },
+    {
+      "name": "Petrol Girls",
+      "musicBrainzId": "2cd694ac-1eb2-4839-801f-7e97be66d856",
+      "wikidataId": "Q55629700",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Petrol_Girls",
+      "spotifyId": null,
+      "genres": [
+        "post-hardcore",
+        "punk rock"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikipedia"
+      ],
+      "actIds": [
+        "petrol-1"
+      ]
+    },
+    {
+      "name": "Pierre Novellie",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "pierre-1"
+      ]
+    },
+    {
+      "name": "Pinkshift",
+      "musicBrainzId": "49d47930-aaba-4caf-8a80-31be20d0e8f6",
+      "wikidataId": "Q115805771",
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [
+        "pop punk",
+        "post-punk",
+        "punk",
+        "rock"
+      ],
+      "sources": [
+        "musicbrainz"
+      ],
+      "actIds": [
+        "pinksh-1"
+      ]
+    },
+    {
+      "name": "Pool Kids",
+      "musicBrainzId": "fee23a56-354f-4387-a2f4-d4495360c08f",
+      "wikidataId": "Q118140610",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Pool_Kids",
+      "spotifyId": null,
+      "genres": [
+        "emo",
+        "indie rock",
+        "alternative rock",
+        "power pop",
+        "math rock"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "poolki-1"
+      ]
+    },
+    {
+      "name": "Prodigal",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "prodig-1"
+      ]
+    },
+    {
+      "name": "Pup",
+      "musicBrainzId": "3165f5e0-44ff-446a-81d7-c09ec69661ae",
+      "wikidataId": "Q16967929",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/PUP_(band)",
+      "spotifyId": null,
+      "genres": [
+        "punk rock",
+        "hardcore punk",
+        "indie rock",
+        "punk",
+        "pop-punk",
+        "emo",
+        "pop punk",
+        "canada"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "pup-2",
+        "pup-1"
+      ]
+    },
+    {
+      "name": "Rachel Fairburn",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "rachel-1"
+      ]
+    },
+    {
+      "name": "Raj Poojara",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "rajpoo-1"
+      ]
+    },
+    {
+      "name": "Reclus.E",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "reclus-1"
+      ]
+    },
+    {
+      "name": "Richard Massara - MC",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "richar-1",
+        "richar-2",
+        "richar-3"
+      ]
+    },
+    {
+      "name": "Saint Agnes",
+      "musicBrainzId": "26d09032-2c33-4656-92bc-1e855f3e7d89",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [
+        "blues",
+        "hard rock",
+        "metal",
+        "psychedelic",
+        "rock",
+        "western"
+      ],
+      "sources": [
+        "musicbrainz"
+      ],
+      "actIds": [
+        "sainta-1"
+      ]
+    },
+    {
+      "name": "Saint Senara",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "saints-1"
+      ]
+    },
+    {
+      "name": "Sans Froid",
+      "musicBrainzId": "829af8e9-c71c-4a55-b9e4-fe1dfec942e1",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "sansfr-1"
+      ]
+    },
+    {
+      "name": "Saturdays At Your Place",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "saturd-1"
+      ]
+    },
+    {
+      "name": "Scustin",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "scusti-1"
+      ]
+    },
+    {
+      "name": "Silent Disco",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "silent-2",
+        "silent-4",
+        "silent-6",
+        "silent-3",
+        "silent-5",
+        "silent-7",
+        "silent-1"
+      ]
+    },
+    {
+      "name": "Silo",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "silo1-1"
+      ]
+    },
+    {
+      "name": "SLAG",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "slag-1"
+      ]
+    },
+    {
+      "name": "SMUG LLC",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "smugll-1"
+      ]
+    },
+    {
+      "name": "snake eyes",
+      "musicBrainzId": "af4d1294-9e2d-4560-8cf1-9e7c155cadb2",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [
+        "britpop",
+        "grunge",
+        "indie pop",
+        "indie rock",
+        "rock"
+      ],
+      "sources": [
+        "musicbrainz"
+      ],
+      "actIds": [
+        "snakee-1"
+      ]
+    },
+    {
+      "name": "So Good",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "sogood-1"
+      ]
+    },
+    {
+      "name": "Soapbox",
+      "musicBrainzId": "f0007987-8bc1-4015-9ee4-66e61c12157f",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [
+        "punk"
+      ],
+      "sources": [
+        "musicbrainz"
+      ],
+      "actIds": [
+        "soapbo-1"
+      ]
+    },
+    {
+      "name": "Solid Gold Fitness",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "solidg1-1",
+        "solidg1-2"
+      ]
+    },
+    {
+      "name": "Solid Gold Fitness - Kids",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "solidg-1",
+        "solidg-2"
+      ]
+    },
+    {
+      "name": "Split Chain",
+      "musicBrainzId": "9c6be276-94fb-4e55-a122-279d66b1f1d3",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [
+        "alternative metal"
+      ],
+      "sources": [
+        "musicbrainz"
+      ],
+      "actIds": [
+        "splitc-1"
+      ]
+    },
+    {
+      "name": "Split Dogs",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "splitd-1"
+      ]
+    },
+    {
+      "name": "Sprints",
+      "musicBrainzId": "256e0b36-88cb-453a-9ce4-7b73cb6b882f",
+      "wikidataId": "Q112025599",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Sprints_(band)",
+      "spotifyId": null,
+      "genres": [
+        "post-punk",
+        "alternative rock",
+        "garage punk"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "sprint-1"
+      ]
+    },
+    {
+      "name": "Still In Love",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "stilli-1"
+      ]
+    },
+    {
+      "name": "Stress Positions",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "stress-1"
+      ]
+    },
+    {
+      "name": "Suds",
+      "musicBrainzId": "bc8faff5-6074-4662-a78c-51ba07d7cc58",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "suds-1"
+      ]
+    },
+    {
+      "name": "Sunny Day Real Estate",
+      "musicBrainzId": "86b24e8f-a4d9-4c84-83ee-fde0d14ad9fa",
+      "wikidataId": "Q1361543",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Sunny_Day_Real_Estate",
+      "spotifyId": null,
+      "genres": [
+        "emo",
+        "alternative rock",
+        "indie rock",
+        "post-hardcore",
+        "grunge",
+        "midwest emo",
+        "post-grunge",
+        "rock"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "sunnyd-1"
+      ]
+    },
+    {
+      "name": "Superheaven",
+      "musicBrainzId": "16f7e748-59b4-4705-959c-9276be0ebf6a",
+      "wikidataId": "Q19881990",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Superheaven",
+      "spotifyId": null,
+      "genres": [
+        "alternative rock",
+        "grunge",
+        "post-hardcore"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "superh-1"
+      ]
+    },
+    {
+      "name": "TBA",
+      "musicBrainzId": "8d572a47-ddb9-4ba0-b485-1e57dbcbc5ea",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "tba-1",
+        "tba-2",
+        "tba-3"
+      ]
+    },
+    {
+      "name": "The Bronx",
+      "musicBrainzId": "66ca7462-753c-48d0-9fe7-80d4b0897d18",
+      "wikidataId": "Q535853",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Bronx_(band)",
+      "spotifyId": null,
+      "genres": [
+        "hardcore punk",
+        "hard rock",
+        "mariachi",
+        "metalcore",
+        "post-hardcore",
+        "punk rock"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "bronx-1"
+      ]
+    },
+    {
+      "name": "The Dark Room",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "darkro-1"
+      ]
+    },
+    {
+      "name": "The Dirty Nil",
+      "musicBrainzId": "039ab342-efb8-472e-817c-5800d3a70493",
+      "wikidataId": "Q29467613",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Dirty_Nil",
+      "spotifyId": null,
+      "genres": [
+        "metal",
+        "punk",
+        "rock",
+        "alternative",
+        "indie"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikipedia"
+      ],
+      "actIds": [
+        "dirtyn-2",
+        "dirtyn-1"
+      ]
+    },
+    {
+      "name": "The Scratch",
+      "musicBrainzId": "060a04e3-dd87-4611-b1bc-12e4bf34d5ee",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "scratc-1"
+      ]
+    },
+    {
+      "name": "The Skinner Brothers",
+      "musicBrainzId": "ae1b32a2-107d-4093-a00b-ac6acf838632",
+      "wikidataId": "Q136488362",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Skinner_Brothers",
+      "spotifyId": null,
+      "genres": [],
+      "sources": [
+        "wikipedia"
+      ],
+      "actIds": [
+        "skinne-1"
+      ]
+    },
+    {
+      "name": "The Skints",
+      "musicBrainzId": "7a279145-e778-4099-8f73-ea917a1956c9",
+      "wikidataId": "Q4051291",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Skints",
+      "spotifyId": null,
+      "genres": [
+        "punk rock",
+        "reggae",
+        "ska",
+        "dub"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "skints-1"
+      ]
+    },
+    {
+      "name": "The Virginmarys",
+      "musicBrainzId": "47035a1e-7137-4c92-9a74-88647d021efd",
+      "wikidataId": "Q7772834",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Virginmarys",
+      "spotifyId": null,
+      "genres": [
+        "rock music"
+      ],
+      "sources": [
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "virgin-1"
+      ]
+    },
+    {
+      "name": "The Xcerts",
+      "musicBrainzId": "f0468734-9ae8-4701-bb18-42c4a162115a",
+      "wikidataId": "Q1733453",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Xcerts",
+      "spotifyId": null,
+      "genres": [
+        "alternative rock"
+      ],
+      "sources": [
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "xcerts1-1"
+      ]
+    },
+    {
+      "name": "THISTLE.",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "thistl1-1"
+      ]
+    },
+    {
+      "name": "Thorns",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "thorns-1"
+      ]
+    },
+    {
+      "name": "Thrill Collins (silent disco set)",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "thrill1-1"
+      ]
+    },
+    {
+      "name": "Thursday",
+      "musicBrainzId": "0acae232-d31a-4211-b6d0-6af1b6350274",
+      "wikidataId": "Q1433169",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Thursday_(band)",
+      "spotifyId": null,
+      "genres": [
+        "post-hardcore",
+        "emo",
+        "alternative rock",
+        "hardcore punk",
+        "american"
+      ],
+      "sources": [
+        "musicbrainz",
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "thursd-1"
+      ]
+    },
+    {
+      "name": "Tooth",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "tooth-1"
+      ]
+    },
+    {
+      "name": "Tropic Gold",
+      "musicBrainzId": "71f9b6b9-1b38-46d5-8a68-77b296af6674",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "tropic1-1"
+      ]
+    },
+    {
+      "name": "Truck",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "truck-1"
+      ]
+    },
+    {
+      "name": "truck violence",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "truckv-1"
+      ]
+    },
+    {
+      "name": "Twat Union",
+      "musicBrainzId": null,
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "twatun-1"
+      ]
+    },
+    {
+      "name": "Venus Grrrls",
+      "musicBrainzId": "d1b37fb5-ad99-4b8d-9d7b-b01b307602b6",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "venusg-1"
+      ]
+    },
+    {
+      "name": "Vinnie Caruana",
+      "musicBrainzId": "5b1ed841-450e-49b6-8bf3-b50bd54bc897",
+      "wikidataId": "Q7932642",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Vinnie_Caruana",
+      "spotifyId": null,
+      "genres": [
+        "punk rock",
+        "hardcore punk",
+        "emo",
+        "indie rock",
+        "post-hardcore",
+        "pop-punk",
+        "melodic hardcore"
+      ],
+      "sources": [
+        "wikidata",
+        "wikipedia"
+      ],
+      "actIds": [
+        "vinnie-1"
+      ]
+    },
+    {
+      "name": "Yoga",
+      "musicBrainzId": "409b911e-1496-4238-a63a-25bcefe0f872",
+      "wikidataId": null,
+      "wikipediaUrl": null,
+      "spotifyId": null,
+      "genres": [],
+      "sources": [],
+      "actIds": [
+        "yoga-1",
+        "yoga-2",
+        "yoga-3"
+      ]
+    }
+  ]
+}

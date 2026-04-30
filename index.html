@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ClashFinderPlus</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">ClashFinderPlus</p>
+        <h1 id="event-title">Loading schedule</h1>
+      </div>
+      <div class="header-meta">
+        <a id="source-link" href="#" target="_blank" rel="noreferrer">Source</a>
+        <span id="edit-date"></span>
+      </div>
+    </header>
+
+    <main>
+      <section class="controls" aria-label="Schedule controls">
+        <div class="field">
+          <label for="search">Search acts</label>
+          <input id="search" type="search" placeholder="Band, stage, time">
+        </div>
+        <div class="field">
+          <label for="stage-filter">Stage</label>
+          <select id="stage-filter">
+            <option value="all">All stages</option>
+          </select>
+        </div>
+        <label class="toggle">
+          <input id="starred-only" type="checkbox">
+          <span>Starred only</span>
+        </label>
+      </section>
+
+      <nav id="day-tabs" class="day-tabs" aria-label="Days"></nav>
+
+      <section class="summary" aria-label="Schedule summary">
+        <div>
+          <span id="act-count">0</span>
+          <small>acts shown</small>
+        </div>
+        <div>
+          <span id="clash-count">0</span>
+          <small>starred clashes</small>
+        </div>
+        <div>
+          <span id="stage-count">0</span>
+          <small>active stages</small>
+        </div>
+      </section>
+
+      <div class="workspace">
+        <div class="workspace-main">
+          <section class="timeline-shell" aria-label="Festival timetable">
+            <div id="timeline" class="timeline"></div>
+          </section>
+
+          <section class="list-panel" aria-label="Act list">
+            <div class="section-heading">
+              <h2>Act Index</h2>
+              <span id="list-hint"></span>
+            </div>
+            <div id="act-list" class="act-list"></div>
+          </section>
+        </div>
+
+        <aside class="planner-panel" aria-label="Your festival plan">
+          <section>
+            <div class="section-heading planner-heading">
+              <h2>Suggested Running Order</h2>
+              <span><span id="starred-count">0</span> stars · <span id="recommendation-count">0</span> suggestions</span>
+            </div>
+            <div id="starred-list" class="rail-list"></div>
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
