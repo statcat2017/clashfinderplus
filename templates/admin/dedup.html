@@ -1,0 +1,81 @@
+{% extends "admin/base_site.html" %}
+{% load i18n static %}
+
+{% block extrastyle %}
+{{ block.super }}
+<style>
+  .dedup-container { max-width: 1400px; margin: 20px; }
+  .duo { display: flex; gap: 20px; margin-bottom: 20px; padding: 15px; background: #f8f9fa; border-radius: 6px; }
+  .side { flex: 1; padding: 15px; background: #fff; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  .side.source { border-left: 3px solid #dc3545; }
+  .side.target { border-left: 3px solid #28a745; }
+  .artist-name { font-size: 18px; font-weight: 600; margin-bottom: 8px; }
+  .tag { display: inline-block; padding: 2px 8px; background: #e9ecef; border-radius: 3px; font-size: 12px; margin: 2px; }
+  .btn { padding: 8px 16px; border-radius: 4px; border: 1px solid #ccc; cursor: pointer; font-size: 13px; }
+  .btn-merge { background: #28a745; color: #fff; border-color: #28a745; }
+  .btn-dismiss { background: #6c757d; color: #fff; border-color: #6c757d; }
+  .score { font-size: 12px; color: #666; }
+  .empty { color: #999; font-style: italic; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="dedup-container">
+  <h1>Duplicate Artist Review</h1>
+  <p>Potential duplicates found. Review side-by-side and merge if appropriate.</p>
+
+  {% for group in duplicates %}
+  <div class="duo" data-source-id="{{ group.artist.id }}">
+    <div class="side source">
+      <div class="artist-name">{{ group.artist.canonical_name }}</div>
+      <div class="score">ID: {{ group.artist.id }} · {% if group.artist.is_anchor %}Anchor{% else %}Regular{% endif %}</div>
+      <div><strong>Tags:</strong> {% for t in group.artist.genre_tags %}<span class="tag">{{ t }}</span>{% empty %}<span class="empty">none</span>{% endfor %}</div>
+      <div><strong>Aliases:</strong> {{ group.artist.aliases.all|join:", "|default:"<span class='empty'>none</span>" }}</div>
+      <div><strong>Slots:</strong> {{ group.artist.lineup_slots.count }}</div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:10px;justify-content:center;">
+      {% for match in group.matches %}
+      <div class="side target" data-target-id="{{ match.artist.id }}" style="margin-bottom:10px;">
+        <div class="artist-name">{{ match.artist.canonical_name }}</div>
+        <div class="score">ID: {{ match.artist.id }} · Score: {{ match.score|floatformat:2 }} · Lev: {{ match.levenshtein }}</div>
+        <div><strong>Tags:</strong> {% for t in match.artist.genre_tags %}<span class="tag">{{ t }}</span>{% empty %}<span class="empty">none</span>{% endfor %}</div>
+        <div><strong>Aliases:</strong> {{ match.artist.aliases.all|join:", "|default:"<span class='empty'>none</span>" }}</div>
+        <div><strong>Slots:</strong> {{ match.artist.lineup_slots.count }}</div>
+        <div style="margin-top:8px;">
+          <button class="btn btn-merge merge-btn" data-source="{{ group.artist.id }}" data-target="{{ match.artist.id }}">Merge into this</button>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% empty %}
+  <p>No potential duplicates found. <span style="font-size:40px;">✅</span></p>
+  {% endfor %}
+</div>
+
+<script>
+document.querySelectorAll('.merge-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    if (!confirm('Merge these artists? This cannot be undone.')) return;
+    const formData = new FormData();
+    formData.append('source_id', this.dataset.source);
+    formData.append('target_id', this.dataset.target);
+
+    fetch('{% url "admin-merge-artists" %}', {
+      method: 'POST',
+      headers: {'X-CSRFToken': '{{ csrf_token }}'},
+      body: formData,
+    })
+    .then(r => r.json())
+    .then(data => {
+      const duo = this.closest('.duo');
+      duo.style.opacity = '0.3';
+      duo.querySelector('.merge-btn').disabled = true;
+      duo.querySelector('.merge-btn').textContent = 'Merged ✓';
+    })
+    .catch(err => alert('Merge failed: ' + err));
+  });
+});
+</script>
+{% endblock %}

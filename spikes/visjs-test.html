@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>vis.js Performance Spike — Clashfinder+</title>
+<script src="https://unpkg.com/vis-network@9.1.9/dist/vis-network.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/vis-network@9.1.9/dist/dist/vis-network.min.css">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: system-ui, sans-serif; background: #1a1a2e; overflow: hidden; }
+  #toolbar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(26,26,46,0.95); padding: 8px 16px;
+    display: flex; gap: 8px; align-items: center;
+    border-bottom: 1px solid #333;
+  }
+  #toolbar label { color: #94a3b8; font-size: 13px; }
+  #toolbar input { width: 60px; }
+  #toolbar button {
+    background: #6366f1; color: #fff; border: none;
+    padding: 4px 12px; border-radius: 4px; cursor: pointer; font-size: 13px;
+  }
+  #toolbar button:hover { background: #4f46e5; }
+  #toolbar .info { color: #94a3b8; font-size: 12px; margin-left: auto; }
+  #stats {
+    position: fixed; bottom: 8px; left: 8px; z-index: 100;
+    color: #94a3b8; font-size: 12px;
+    background: rgba(26,26,46,0.9); padding: 8px 12px; border-radius: 4px;
+  }
+  #canvas { width: 100vw; height: 100vh; }
+</style>
+</head>
+<body>
+<div id="toolbar">
+  <label>Nodes: <input id="nodeCount" type="number" value="300" min="10" max="3000" step="10"></label>
+  <label>Edges/node: <input id="edgeCount" type="number" value="5" min="0" max="20"></label>
+  <button id="generateBtn">Generate</button>
+  <button id="physicsToggle">Enable Physics</button>
+  <label style="margin-left:16px"><input type="checkbox" id="showEdges" checked> Show Edges</label>
+  <span class="info" id="fpsDisplay">FPS: --</span>
+</div>
+<div id="stats">Ready</div>
+<div id="canvas"></div>
+<script>
+const nodes = new vis.DataSet();
+const edges = new vis.DataSet();
+let network = null;
+let lastFrameTime = performance.now();
+let frameCount = 0;
+let fps = 0;
+
+const container = document.getElementById('canvas');
+const options = {
+  physics: false,
+  nodes: {
+    shape: 'dot',
+    size: 10,
+    font: { size: 10, color: '#e2e8f0' },
+    borderWidth: 1,
+    color: {
+      background: '#6366f1',
+      border: '#818cf8',
+      highlight: { background: '#f59e0b', border: '#fbbf24' }
+    }
+  },
+  edges: {
+    color: { color: '#475569', highlight: '#f59e0b', hover: '#94a3b8' },
+    width: 1,
+    smooth: false
+  },
+  interaction: {
+    dragNodes: true,
+    dragView: true,
+    zoomView: true,
+    hover: true,
+    tooltipDelay: 200
+  },
+  manipulation: false
+};
+
+function generateRandomArtists(count, edgesPerNode) {
+  const artistNames = [
+    'Deftones', 'Slipknot', 'Turnstile', 'Korn', 'Basement',
+    'Drug Church', 'Cancer Bats', 'Fiddlehead', 'Militarie Gun', 'Quicksand',
+    'Helmet', 'Soul Blind', 'Narrow Head', 'Fleshwater', 'Angel Du$t',
+    'Metallica', 'Limp Bizkit', 'Static-X', 'Mudvayne', 'Coal Chamber',
+    'Radiohead', 'The Cure', 'Fontaines D.C.', 'IDLES', 'Arctic Monkeys',
+    'Taylor Swift', 'Beyoncé', 'Charli XCX', 'Lana Del Rey', 'Rina Sawayama',
+    'Aphex Twin', 'Fred again..', 'Bicep', 'Skrillex', 'The Prodigy',
+    'Kendrick Lamar', 'Tyler the Creator', 'Stormzy', 'Little Simz', 'Jorja Smith',
+    'Foo Fighters', 'QOTSA', 'The Strokes', 'Vampire Weekend', 'Phoebe Bridgers',
+    'Slowthai', 'Wargasm', 'Ho99o9', 'Nova Twins', 'Bob Vylan'
+  ];
+  const data = { nodes: [], edges: [] };
+  const usedPositions = new Set();
+
+  for (let i = 0; i < count; i++) {
+    const nameIdx = i % artistNames.length;
+    const nameSuffix = i >= artistNames.length ? ` ${Math.floor(i / artistNames.length) + 1}` : '';
+    const name = `${artistNames[nameIdx]}${nameSuffix}`;
+    const isAnchor = i < 5;
+    
+    let x, y, key;
+    do {
+      x = (Math.random() - 0.5) * 800;
+      y = (Math.random() - 0.5) * 600;
+      key = `${Math.round(x/10)},${Math.round(y/10)}`;
+    } while (usedPositions.has(key));
+    usedPositions.add(key);
+
+    data.nodes.push({
+      id: i + 1,
+      label: name,
+      x, y,
+      size: isAnchor ? 25 : 8 + (i % 5) * 2,
+      fixed: isAnchor,
+      title: name + (isAnchor ? '\n★ Anchor Artist' : `\n${5 + (i % 3)} festivals`),
+      color: isAnchor ? { background: '#f59e0b', border: '#fbbf24' } : undefined
+    });
+  }
+
+  for (let i = 0; i < count; i++) {
+    const connected = new Set();
+    const possible = [];
+    for (let j = 0; j < count; j++) {
+      if (i !== j) possible.push(j);
+    }
+    possible.sort(() => Math.random() - 0.5);
+    const targetCount = Math.min(edgesPerNode, count - 1);
+    for (let k = 0; k < targetCount; k++) {
+      const target = possible[k];
+      const pairKey = [i + 1, target + 1].sort().join('-');
+      if (!connected.has(target) && !data.edges.find(e => [e.from, e.to].sort().join('-') === pairKey)) {
+        connected.add(target);
+        const score = 0.1 + Math.random() * 0.8;
+        data.edges.push({ from: i + 1, to: target + 1, value: score, title: `Similarity: ${(score * 100).toFixed(0)}%` });
+      }
+    }
+  }
+  return data;
+}
+
+function buildNetwork(nodeCount, edgesPerNode, withPhysics) {
+  const t0 = performance.now();
+  nodes.clear();
+  edges.clear();
+  
+  const data = generateRandomArtists(nodeCount, edgesPerNode);
+  nodes.add(data.nodes);
+  edges.add(data.edges);
+
+  if (network) {
+    network.setData({ nodes, edges });
+    network.setOptions({ physics: { enabled: withPhysics } });
+  } else {
+    options.physics = { enabled: withPhysics };
+    network = new vis.Network(container, { nodes, edges }, options);
+    network.on('afterDrawing', () => {
+      const t1 = performance.now();
+      document.getElementById('stats').textContent =
+        `${nodeCount} nodes · ${data.edges.length} edges · generated in ${(t1 - t0).toFixed(0)}ms`;
+    });
+    network.on('dragStart', () => { network.setOptions({ physics: { enabled: false } }); });
+    network.on('dragEnd', () => { network.setOptions({ physics: { enabled: false } }); });
+  }
+
+  updateFPS();
+}
+
+function updateFPS() {
+  const now = performance.now();
+  frameCount++;
+  if (now - lastFrameTime >= 1000) {
+    fps = frameCount;
+    frameCount = 0;
+    lastFrameTime = now;
+    document.getElementById('fpsDisplay').textContent = `FPS: ${fps}`;
+  }
+  requestAnimationFrame(updateFPS);
+}
+
+// Controls
+document.getElementById('generateBtn').addEventListener('click', () => {
+  const n = parseInt(document.getElementById('nodeCount').value) || 300;
+  const e = parseInt(document.getElementById('edgeCount').value) || 5;
+  const physics = document.getElementById('physicsToggle').textContent === 'Disable Physics';
+  buildNetwork(n, e, physics);
+});
+
+document.getElementById('physicsToggle').addEventListener('click', function() {
+  if (!network) return;
+  const enabled = this.textContent === 'Enable Physics';
+  network.setOptions({ physics: { enabled } });
+  this.textContent = enabled ? 'Disable Physics' : 'Enable Physics';
+});
+
+document.getElementById('showEdges').addEventListener('change', function() {
+  if (!network) return;
+  network.setOptions({ edges: { hidden: !this.checked } });
+});
+
+// Initial load
+buildNetwork(300, 5, false);
+</script>
+</body>
+</html>

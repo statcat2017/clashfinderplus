@@ -1,0 +1,96 @@
+{% extends "admin/base_site.html" %}
+{% load i18n static %}
+
+{% block extrastyle %}
+{{ block.super }}
+<style>
+  .dash-container { max-width: 1200px; margin: 20px; }
+  .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 30px; }
+  .stat-card { background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 20px; text-align: center; }
+  .stat-number { font-size: 32px; font-weight: 700; color: #417690; }
+  .stat-label { font-size: 13px; color: #666; margin-top: 4px; }
+  .edge-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .edge-table th, .edge-table td { padding: 8px 12px; border-bottom: 1px solid #eee; text-align: left; }
+  .edge-table th { background: #f8f9fa; font-weight: 600; }
+  .feedback-bar { display: flex; gap: 20px; margin: 15px 0; }
+  .feedback-item { padding: 10px 20px; border-radius: 6px; background: #f8f9fa; }
+  .feedback-count { font-size: 24px; font-weight: 700; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="dash-container">
+  <h1>Taste Dashboard</h1>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-number">{{ total_sessions }}</div>
+      <div class="stat-label">Anonymized Sessions</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">{{ total_selections }}</div>
+      <div class="stat-label">Artist Likes</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">{{ total_edges }}</div>
+      <div class="stat-label">Taste Edges</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">{{ session_growth_30d }}</div>
+      <div class="stat-label">New Sessions (30 days)</div>
+    </div>
+  </div>
+
+  <h2>Feedback Summary</h2>
+  <div class="feedback-bar">
+    <div class="feedback-item">
+      <div class="feedback-count">{{ feedback_counts.good_shout|default:"0" }}</div>
+      <div>Good Shout</div>
+    </div>
+    <div class="feedback-item">
+      <div class="feedback-count">{{ feedback_counts.not_for_me|default:"0" }}</div>
+      <div>Not for Me</div>
+    </div>
+    <div class="feedback-item">
+      <div class="feedback-count">{{ feedback_counts.already_know|default:"0" }}</div>
+      <div>Already Know</div>
+    </div>
+  </div>
+
+  <h2>Top Cultural Affinity Edges (highest lift)</h2>
+  <table class="edge-table">
+    <thead><tr><th>Source</th><th>Target</th><th>Lift</th><th>Confidence</th><th>Sample Size</th><th>Festival</th></tr></thead>
+    <tbody>
+      {% for edge in top_edges %}
+      <tr>
+        <td>{{ edge.source_artist.canonical_name }}</td>
+        <td>{{ edge.target_artist.canonical_name }}</td>
+        <td>{{ edge.smoothed_lift|floatformat:2 }}</td>
+        <td>{{ edge.confidence|floatformat:2 }}</td>
+        <td>{{ edge.sample_size }}</td>
+        <td>{{ edge.festival.name|default:"Global" }}</td>
+      </tr>
+      {% empty %}
+      <tr><td colspan="6">No taste edges yet. <a href="{% url 'admin:index' %}">Add some data</a>.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <h2>Most Co-Selected Pairs</h2>
+  <table class="edge-table">
+    <thead><tr><th>Source</th><th>Target</th><th>Co-Selections</th><th>Lift</th></tr></thead>
+    <tbody>
+      {% for edge in top_co %}
+      <tr>
+        <td>{{ edge.source_artist.canonical_name }}</td>
+        <td>{{ edge.target_artist.canonical_name }}</td>
+        <td>{{ edge.sample_size }}</td>
+        <td>{{ edge.smoothed_lift|floatformat:2 }}</td>
+      </tr>
+      {% empty %}
+      <tr><td colspan="4">No co-selected pairs yet.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

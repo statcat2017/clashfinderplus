@@ -1,0 +1,7 @@
+asgiref==3.11.1
+beautifulsoup4>=4.12
+Django==6.0.5
+httpx>=0.28
+python-decouple==3.8
+python-Levenshtein>=0.27
+sqlparse==0.5.5

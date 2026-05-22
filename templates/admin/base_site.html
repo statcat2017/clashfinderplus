@@ -1,0 +1,10 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Clashfinder+ Admin</a></h1>
+{% endblock %}
+
+{% block nav-global %}
+  <a href="{% url 'admin:index' %}" style="margin-right:16px">Home</a>
+{% endblock %}

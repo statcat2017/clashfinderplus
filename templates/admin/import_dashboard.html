@@ -1,0 +1,122 @@
+{% extends "admin/base_site.html" %}
+{% load i18n static %}
+
+{% block extrastyle %}
+{{ block.super }}
+<style>
+  .import-container { max-width: 1200px; margin: 20px; }
+  .festival-table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
+  .festival-table th, .festival-table td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #eee; }
+  .festival-table th { background: #f8f9fa; font-weight: 600; }
+  .btn { display: inline-block; padding: 6px 14px; border-radius: 4px; border: 1px solid #ccc; background: #fff; cursor: pointer; font-size: 13px; }
+  .btn-primary { background: #417690; color: #fff; border-color: #417690; }
+  .btn-primary:hover { background: #305f72; }
+  .btn-sm { padding: 4px 10px; font-size: 12px; }
+  .log-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .log-table th, .log-table td { padding: 6px 10px; border-bottom: 1px solid #eee; }
+  .status-success { color: #28a745; }
+  .status-failed { color: #dc3545; }
+  .status-in_progress { color: #ffc107; }
+  .spinner { display: none; margin-left: 8px; }
+  .import-row.running .spinner { display: inline-block; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="import-container">
+  <h1>Import Dashboard</h1>
+
+  <h2>Festivals</h2>
+  <table class="festival-table">
+    <thead>
+      <tr>
+        <th>Festival</th>
+        <th>Dates</th>
+        <th>Artists</th>
+        <th>Last Import</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for festival in festivals %}
+      <tr class="import-row" data-festival-id="{{ festival.id }}">
+        <td><strong>{{ festival.name }}</strong></td>
+        <td>{{ festival.start_date|date:"M j" }} – {{ festival.end_date|date:"M j, Y" }}</td>
+        <td>{{ festival.lineup_slots.count }}</td>
+        <td>
+          {% with last_log=festival.scrape_logs.first %}
+            {% if last_log %}
+              {{ last_log.timestamp|date:"M j, H:i" }}
+              <span class="status-{{ last_log.status }}">({{ last_log.status }})</span>
+            {% else %}
+              <em>Never</em>
+            {% endif %}
+          {% endwith %}
+        </td>
+        <td>
+          <button class="btn btn-primary btn-sm import-btn" data-importer="clashfinder_html">Import HTML</button>
+          <button class="btn btn-sm import-btn" data-importer="clashfinder_api">Import API</button>
+          <span class="spinner">⏳</span>
+        </td>
+      </tr>
+      {% empty %}
+      <tr><td colspan="5">No festivals yet. <a href="{% url 'admin:core_festival_add' %}">Create one</a>.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <h2>Recent Import Logs</h2>
+  <table class="log-table">
+    <thead>
+      <tr><th>Festival</th><th>Importer</th><th>Time</th><th>Found</th><th>New</th><th>Updated</th><th>Status</th><th>Errors</th></tr>
+    </thead>
+    <tbody>
+      {% for log in scrape_logs %}
+      <tr>
+        <td>{{ log.festival.name }}</td>
+        <td>{{ log.importer_type }}</td>
+        <td>{{ log.timestamp|date:"M j, H:i" }}</td>
+        <td>{{ log.artists_found }}</td>
+        <td>{{ log.artists_new }}</td>
+        <td>{{ log.artists_updated }}</td>
+        <td class="status-{{ log.status }}">{{ log.status }}</td>
+        <td>{{ log.errors|truncatechars:80 }}</td>
+      </tr>
+      {% empty %}
+      <tr><td colspan="8">No imports yet.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<script>
+document.querySelectorAll('.import-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const row = this.closest('.import-row');
+    const festivalId = row.dataset.festivalId;
+    const importerType = this.dataset.importer;
+    row.classList.add('running');
+
+    const formData = new FormData();
+    formData.append('festival_id', festivalId);
+    formData.append('importer_type', importerType);
+
+    fetch('{% url "admin-import-run" %}', {
+      method: 'POST',
+      headers: {'X-CSRFToken': '{{ csrf_token }}'},
+      body: formData,
+    })
+    .then(r => r.json())
+    .then(data => {
+      row.classList.remove('running');
+      alert(`Import complete: ${data.artists_found} found, ${data.artists_new} new, ${data.artists_updated} updated`);
+      location.reload();
+    })
+    .catch(err => {
+      row.classList.remove('running');
+      alert('Import failed: ' + err);
+    });
+  });
+});
+</script>
+{% endblock %}

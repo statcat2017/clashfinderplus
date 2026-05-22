@@ -1,0 +1,32 @@
+{% extends "public/home.html" %}
+{% load static %}
+
+{% block extra_head %}
+{{ block.super }}
+<style>
+  .app-body { grid-template-columns: 1fr; }
+  .festival-list { display: none; }
+  .back-link { display: block; margin-bottom: 16px; }
+</style>
+{% endblock %}
+
+{% block content %}
+<a href="{% url 'home' %}" class="back-link">← All festivals</a>
+<div class="festival-detail" id="festival-detail">
+  <div class="festival-header" id="festival-header"></div>
+  <div class="day-tabs" id="day-tabs"></div>
+  <div class="lineup-container" id="lineup-container"></div>
+  <div class="recs-section hidden" id="recs-section">
+    <h2 class="recs-heading">
+      Recommendations
+      <span class="recs-count" id="recs-count"></span>
+    </h2>
+    <div class="recs-list" id="recs-list"></div>
+  </div>
+</div>
+
+<script>
+window.__initialFestivalSlug = '{{ festival.slug }}';
+</script>
+<script src="{% static 'js/public.js' %}"></script>
+{% endblock %}

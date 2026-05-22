@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Clashfinder+{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  {% block extra_head %}{% endblock %}
+</head>
+<body>
+  {% block content %}{% endblock %}
+</body>
+</html>

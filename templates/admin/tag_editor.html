@@ -1,0 +1,160 @@
+{% extends "admin/base_site.html" %}
+{% load i18n static %}
+
+{% block extrastyle %}
+{{ block.super }}
+<style>
+  .tag-container { max-width: 1200px; margin: 20px; }
+  .tag-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 15px; }
+  .tag-card { background: #fff; border: 1px solid #eee; border-radius: 6px; padding: 15px; }
+  .tag-card h3 { margin: 0 0 8px; font-size: 15px; }
+  .tag-input { display: flex; gap: 6px; flex-wrap: wrap; }
+  .tag-badge { display: inline-flex; align-items: center; gap: 4px; padding: 3px 8px; background: #e9ecef; border-radius: 3px; font-size: 12px; }
+  .tag-badge .remove { cursor: pointer; color: #dc3545; font-weight: bold; }
+  .tag-suggest { display: inline-block; padding: 2px 6px; margin: 2px; background: #f0f0f0; border-radius: 3px; cursor: pointer; font-size: 11px; }
+  .tag-suggest:hover { background: #417690; color: #fff; }
+  .search-bar { margin-bottom: 20px; }
+  .search-bar input { padding: 8px 12px; border: 1px solid #ccc; border-radius: 4px; width: 300px; font-size: 14px; }
+  .bulk-bar { margin-bottom: 20px; padding: 12px; background: #f8f9fa; border-radius: 6px; }
+  .btn { padding: 6px 14px; border-radius: 4px; border: 1px solid #ccc; background: #fff; cursor: pointer; font-size: 13px; }
+  .btn-primary { background: #417690; color: #fff; border-color: #417690; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="tag-container">
+  <h1>Tag Editor</h1>
+
+  <div class="bulk-bar">
+    <strong>Bulk Tag:</strong>
+    <input type="text" id="bulk-tag-input" placeholder="Enter tag name..." style="margin:0 8px;padding:4px 8px;">
+    <button class="btn btn-primary" id="bulk-tag-btn">Apply to selected</button>
+    <span style="margin-left:12px;color:#666;font-size:12px;">
+      <input type="checkbox" id="select-all"> Select all visible
+    </span>
+  </div>
+
+  <div class="search-bar">
+    <input type="text" id="tag-search" placeholder="Search artists..." value="{{ request.GET.q }}">
+    <button class="btn" onclick="searchArtists()">Search</button>
+  </div>
+
+  <h2>Suggested Tags</h2>
+  <div style="margin-bottom:20px;">
+    {% for tag in all_tags %}
+    <span class="tag-suggest" onclick="addTagToAll('{{ tag|escapejs }}')">{{ tag }}</span>
+    {% endfor %}
+  </div>
+
+  <div class="tag-grid">
+    {% for artist in artists %}
+    <div class="tag-card" data-artist-id="{{ artist.id }}">
+      <h3>
+        <input type="checkbox" class="artist-check" value="{{ artist.id }}">
+        {{ artist.canonical_name }}
+      </h3>
+      <div class="tag-input" id="tags-{{ artist.id }}">
+        {% for tag in artist.genre_tags %}
+        <span class="tag-badge">{{ tag }} <span class="remove" onclick="removeTag({{ artist.id }}, '{{ tag|escapejs }}')">×</span></span>
+        {% endfor %}
+      </div>
+      <div style="margin-top:6px;">
+        <input type="text" id="new-tag-{{ artist.id }}" placeholder="Add tag..." style="padding:3px 6px;font-size:12px;width:120px;">
+        <button class="btn" onclick="addTag({{ artist.id }})">+</button>
+      </div>
+    </div>
+    {% empty %}
+    <p>No artists found. Try a different search.</p>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+function searchArtists() {
+  const q = document.getElementById('tag-search').value;
+  window.location.href = '?q=' + encodeURIComponent(q);
+}
+
+function addTag(artistId) {
+  const input = document.getElementById('new-tag-' + artistId);
+  const tag = input.value.trim();
+  if (!tag) return;
+  getTags(artistId, (tags) => {
+    if (tags.includes(tag)) return;
+    tags.push(tag);
+    saveTags(artistId, tags);
+  });
+}
+
+function removeTag(artistId, tag) {
+  getTags(artistId, (tags) => {
+    const idx = tags.indexOf(tag);
+    if (idx > -1) tags.splice(idx, 1);
+    saveTags(artistId, tags);
+  });
+}
+
+function getTags(artistId, callback) {
+  const container = document.getElementById('tags-' + artistId);
+  const tags = [];
+  container.querySelectorAll('.tag-badge').forEach(el => {
+    const text = el.textContent.trim().replace('×', '').trim();
+    if (text) tags.push(text);
+  });
+  callback(tags);
+}
+
+function saveTags(artistId, tags) {
+  const formData = new FormData();
+  formData.append('artist_id', artistId);
+  formData.append('tags', JSON.stringify(tags));
+
+  fetch('{% url "admin-tag-update" %}', {
+    method: 'POST',
+    headers: {'X-CSRFToken': '{{ csrf_token }}'},
+    body: formData,
+  })
+  .then(r => r.json())
+  .then(() => {
+    const container = document.getElementById('tags-' + artistId);
+    container.innerHTML = tags.map(t =>
+      `<span class="tag-badge">${t} <span class="remove" onclick="removeTag(${artistId}, '${t.replace(/'/g, "\\'")}')">×</span></span>`
+    ).join('');
+    document.getElementById('new-tag-' + artistId).value = '';
+  });
+}
+
+function addTagToAll(tag) {
+  const checkboxes = document.querySelectorAll('.artist-check:checked');
+  if (checkboxes.length === 0) { alert('Select at least one artist'); return; }
+  const ids = Array.from(checkboxes).map(cb => cb.value);
+  const formData = new FormData();
+  ids.forEach(id => formData.append('artist_ids', id));
+  formData.append('tag', tag);
+  fetch('{% url "admin-bulk-tag" %}', {
+    method: 'POST',
+    headers: {'X-CSRFToken': '{{ csrf_token }}'},
+    body: formData,
+  })
+  .then(r => r.json())
+  .then(data => {
+    alert(`Tagged ${data.updated} artists`);
+    location.reload();
+  });
+}
+
+document.getElementById('select-all')?.addEventListener('change', function() {
+  document.querySelectorAll('.artist-check').forEach(cb => cb.checked = this.checked);
+});
+
+document.getElementById('bulk-tag-btn')?.addEventListener('click', () => {
+  const tag = document.getElementById('bulk-tag-input').value.trim();
+  if (!tag) { alert('Enter a tag'); return; }
+  addTagToAll(tag);
+});
+
+document.getElementById('tag-search')?.addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') searchArtists();
+});
+</script>
+{% endblock %}

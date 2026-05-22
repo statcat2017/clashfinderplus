@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/public.css' %}">
+{% endblock %}
+
+{% block content %}
+<div id="privacy-banner" class="privacy-banner hidden">
+  <p>We use local browser storage to remember artists you like and improve recommendations. No personal data is collected or stored on our servers.</p>
+  <div class="privacy-banner-actions">
+    <a href="{% url 'privacy' %}">Learn more</a>
+    <button id="privacy-dismiss" class="btn btn-sm">Got it</button>
+    <button id="privacy-reset" class="btn btn-sm btn-outline">Reset my taste profile</button>
+  </div>
+</div>
+
+<div class="app-layout">
+  <header class="app-header">
+    <h1 class="app-logo">Lineup Discover</h1>
+    <span class="app-subtitle">Find your next favourite act</span>
+  </header>
+
+  <div class="app-body">
+    <aside class="festival-list" id="festival-list">
+      <div class="festival-list-header">
+        <input type="search" id="festival-search" class="search-input" placeholder="Search festivals…">
+      </div>
+      <div class="festival-list-items" id="festival-list-items">
+        <div class="skeleton-row"></div>
+        <div class="skeleton-row"></div>
+        <div class="skeleton-row"></div>
+      </div>
+    </aside>
+
+    <main class="main-content" id="main-content">
+      <div class="empty-state" id="empty-state">
+        <h2>Select a festival</h2>
+        <p>Choose a festival from the list to see its lineup.</p>
+      </div>
+      <div class="festival-detail hidden" id="festival-detail">
+        <div class="festival-header" id="festival-header">
+          <div class="skeleton-text skeleton-title"></div>
+          <div class="skeleton-text skeleton-meta"></div>
+        </div>
+        <div class="day-tabs" id="day-tabs"></div>
+        <div class="lineup-container" id="lineup-container">
+          <div class="skeleton-grid">
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+          </div>
+        </div>
+        <div class="recs-section hidden" id="recs-section">
+          <h2 class="recs-heading">
+            Recommendations
+            <span class="recs-count" id="recs-count"></span>
+          </h2>
+          <div class="recs-list" id="recs-list">
+            <div class="skeleton-recs"><div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<div id="reset-confirm" class="modal-overlay hidden">
+  <div class="modal">
+    <h3>Reset your taste profile?</h3>
+    <p>This will delete all your liked artists and recommendation feedback for this session.</p>
+    <div class="modal-actions">
+      <button id="reset-confirm-btn" class="btn btn-danger">Yes, reset</button>
+      <button id="reset-cancel-btn" class="btn btn-outline">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<noscript>
+  <div class="noscript-notice">
+    <p>JavaScript is required to use this site. <a href="/privacy/">Learn more about our privacy policy</a>.</p>
+  </div>
+</noscript>
+
+<script src="{% static 'js/public.js' %}"></script>
+{% endblock %}

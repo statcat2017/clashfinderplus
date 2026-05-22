@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/public.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="privacy-page">
+  <a href="{% url 'home' %}" class="back-link">← Back to festivals</a>
+  <h1>Privacy Notice</h1>
+
+  <h2>What we store</h2>
+  <p>This site uses your browser's local storage to remember:</p>
+  <ul>
+    <li>A randomly generated anonymous session ID</li>
+    <li>Which artists you've liked on festival lineups</li>
+    <li>Your feedback on recommendations (e.g. "Good shout", "Not for me")</li>
+  </ul>
+  <p>This data stays on your device and is only sent to our server when you like an artist or submit feedback.</p>
+
+  <h2>What we store on our server</h2>
+  <p>When you like an artist or submit recommendation feedback, we store:</p>
+  <ul>
+    <li>Your anonymous session ID (a random UUID — not linked to your identity)</li>
+    <li>The artists you liked and your feedback</li>
+    <li>The festival you were browsing</li>
+    <li>A timestamp</li>
+  </ul>
+  <p><strong>We do not store your IP address, name, email, or any personal data.</strong></p>
+
+  <h2>How long we keep it</h2>
+  <p>Raw session data is automatically deleted after 180 days. Aggregated patterns (e.g. "people who like artist A also like artist B") are kept indefinitely without session identifiers.</p>
+
+  <h2>Lawful basis</h2>
+  <p>We process this data under <strong>legitimate interest</strong> — to provide personalised festival recommendations. You can opt out at any time by resetting your taste profile.</p>
+
+  <h2>Your rights</h2>
+  <p>You can reset your taste profile at any time using the button below. This deletes your session data from our server and clears your local storage.</p>
+
+  <button id="privacy-reset-page" class="btn btn-danger">Reset my taste profile</button>
+
+  <h2>Contact</h2>
+  <p>For questions about this privacy notice, please open an issue at our project repository.</p>
+</div>
+
+<script>
+document.getElementById('privacy-reset-page')?.addEventListener('click', function() {
+  const sid = localStorage.getItem('cf_session_id');
+  fetch('/api/taste/reset/', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({session_id: sid}),
+  }).then(() => {
+    localStorage.removeItem('cf_session_id');
+    localStorage.removeItem('cf_privacy_dismissed');
+    Object.keys(localStorage).forEach(k => {
+      if (k.startsWith('cf_likes_')) localStorage.removeItem(k);
+    });
+    this.textContent = 'Taste profile reset';
+    this.disabled = true;
+  });
+});
+</script>
+{% endblock %}
